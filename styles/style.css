@@ -1,0 +1,58 @@
+html,body {
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+#intro {
+  background: #000000 url("/images/space.jpg") no-repeat center bottom;
+  background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	min-height: 720px;
+	display: table;
+	position: relative;
+	text-align: center;
+}
+#firstname{
+  color: white;
+  padding-top: 3rem;
+}
+#lastname{
+  color: white;
+}
+
+#profile {
+  height: 16rem;
+  width: 16rem;
+  border-radius: 50%;
+  margin-top: 5rem;
+}
+#profile:hover{
+  content: url("/images/wall.gif")
+}
+@media screen and (min-width: 601px) {
+  #intro hr {
+    width: 25%;
+  }
+  #firstname {
+    font-size: 75px;
+  }
+  #lastname {
+    font-size: 75px;
+  }
+}
+
+table {
+  width: 50%;
+}
+
+#icons{
+  color: white;
+}
+#icons:hover {
+  color: #20C20E;
+}
