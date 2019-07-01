@@ -2,12 +2,15 @@ html,body {
   height: 100%;
 }
 
+
 h1 {
   font-family: 'Orbitron', sans-serif;
 }
 
 #intro {
   background: #000000 url("/images/space.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
   background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
@@ -17,19 +20,25 @@ h1 {
 	position: relative;
 	text-align: center;
 }
+
+#intro-content {
+  width: 100%;
+  height: auto;
+}
 #firstname{
   color: white;
-  padding-top: 3rem;
+  padding-top: 3vh;
+  background-size: cover;
 }
 #lastname{
   color: white;
 }
 
 #profile {
-  height: 16rem;
-  width: 16rem;
+  height: 25vh;
+  width: 25vh;
   border-radius: 50%;
-  margin-top: 5rem;
+  margin-top: 6vh;
 }
 #profile:hover{
   content: url("/images/wall.gif")
