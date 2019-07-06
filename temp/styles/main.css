@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+  font-size: 1vw;
+}
+@media screen and (max-width: 600px) {
+  html, body {
+    font-size: 1vh;
+  }
+}
+#header-wrapper {
+  background-color: lightgray;
+}
+
+#header{
+  padding: 10px;
+}
+
+
+#navigation {
+  padding-top: 0px;
+}
+
+ul{
+  padding-left: 1.2vw;
+  list-style: inside;
+}
+/* #items > li > ul {
+  font-size: .8vw;
+} */
+a{
+  color: brown;
+}
+a:hover {
+  color: #654321;
+  text-decoration: none;
+}
+
+#items{
+  list-style: none;
+  padding-left: .3vw;
+}
