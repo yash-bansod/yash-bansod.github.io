@@ -1,3 +1,6 @@
 $(window).on('load', function() {
-     $('.preloader').fadeOut('slow');
+     $(window).css("overflow","hidden");
+     $('.preloader').fadeOut('slow', function(){
+          $(window).css("overflow","auto");
+     });
 });
