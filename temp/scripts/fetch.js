@@ -57,11 +57,6 @@ function displayTable(courseObj) {
   file.innerHTML = courseObj.filename;
 }
 
-function createTagBtn(taglist) {
-  taglist.forEach((tag) => {
-    $('#TagBtns').append()
-  });
-}
 
 
 
@@ -81,16 +76,14 @@ $(document).ready(function() {
     }
   },1000);
 
-  $('#tagList').change(function(){
+
+  $('#searchBtn').click(function() {
     $('tbody').empty();
-    setTimeout(function(){
-      if($('#tagList').val().length===0) {
-        getCourseList(allTags);
-      }
-      courseList = new Array();
-      getCourseList($('#tagList').val());
-      createTagBtn($('#tagList').val());
-    },1500);
+    if($('#tagList').val().length===0) {
+      getCourseList(allTags);
+    }
+    courseList = new Array();
+    getCourseList($('#tagList').val());
   });
 
 });

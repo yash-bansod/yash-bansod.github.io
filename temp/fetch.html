@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="styles/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="styles/tabulator.min.css">
         <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
 
     <title>IIT Mandi | Academics</title>
   </head>
@@ -135,28 +135,28 @@
               </div>
               <div id="content" class="container col-12 col-md-9">
 
-                <select id="tagList" class="form-control" multiple="multiple">
-                  <!-- Dynamic -->
-                </select>
-                <br>
-                <div class="container" id="TagBtns">
+                <div id="aboveTable" class="container" style="margin-bottom: 40px;">
+                  <select id="tagList" class="form-control" multiple="multiple">
+                    <!-- Dynamic -->
+                  </select>
+
+                  <button type="button" class="btn btn-outline-primary float-right" id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  <button type="button" class="btn btn-secondary float-right" id="resetBtn">Reset </button>
+
+
+                  <!-- tag badges -->
+                  <div id="tagBadges" class="container">
+                    <!-- Dynamic -->
+                  </div>
 
                 </div>
-                <br>
 
-                <table class="table table-hover table-striped">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th class="text-nowrap">Code</th>
-                      <th>Name</th>
-                      <th class="text-nowrap">LTPC</th>
-                      <th>File</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <!-- Dynamic -->
-                  </tbody>
-                </table>
+                <br>
+                <!-- Table -->
+                <div id="table">
+                  <!-- Dynamic -->
+                </div>
+
               </div>
             </div>
           </div>
@@ -182,8 +182,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/bootstrap-multiselect.js"></script>
     <script src="scripts/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="scripts/tabulator.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
-    <script type="text/javascript" src="scripts/fetch.js"></script>
+    <script type="text/javascript" src="scripts/fetch2.js"></script>
   </body>
 </html>
