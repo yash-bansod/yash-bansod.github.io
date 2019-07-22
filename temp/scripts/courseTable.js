@@ -33,7 +33,7 @@ var table = new Tabulator("#table", {
 				
 				// if file not present
 				if(filename === '#') return "No file present"
-				else return `<a href="${"https://ethereal-dawn.glitch.me/static/pdf/"+filename}" >PDF File</a>`;
+				else return `<a href="${"https://ethereal-dawn.glitch.me/static/pdf/"+filename}" target="_blank" >PDF File</a>`;
 			}
 		},
 	],
