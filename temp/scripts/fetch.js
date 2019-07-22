@@ -1,112 +1,89 @@
 const proxyurl = "https://cors-anywhere.herokuapp.com/";
+var table = document.querySelector('tbody');
+var courseList = new Array();
 var allTags = new Array();
-var allCourses;
+
 fetchAllTags();
-fetchAllCourses();
-
-var table = new Tabulator("#table", {
-	height:false, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
-  layout:"fitColumns", //fit columns to width of table (optional)
-  initialSort:[
-    {column: "courseCode", dir:"asc"},
-  ],
-  pagination: "local",
-  paginationSize: 10,
-	responsiveLayout:true, // enable responsive layouts
-  resizableColumns:false,
-	columns:[ //Define Table Columns
- 	{title:"Code", field:"courseCode", widthGrow: 1, formatter: "textarea"},
- 	{title:"Course Name", field:"courseName", formatter: "textarea", widthGrow:2},
- 	{title:"LTPC", field:"ltpc", formatter: "textarea", widthGrow: 0.7},
- 	{title:"File", field:"filename", formatter: "link", formatterParams: {
-    label:"PDF file",
-    target: "_blank",
-    urlPrefix: "https://ethereal-dawn.glitch.me/static/pdf/",
-    urlField: "filename"
-  }},
-	],
-});
-
-$(document).ready(function() {
-  $('#tagList').multiselect({
-    enableFiltering: true,
-    maxHeight: 400,
-    nonSelectedText: 'All',
-    buttonWidth: 200,
-    buttonClass: 'btn btn-outline-dark',
-    delimiterText: '\n',
-    enableCaseInsensitiveFiltering: true
-  });
-  $('#searchBtn').click(function() {
-    destroyBadges();
-    if($('#tagList').val().length === 0) {
-      table.setData(allCourses);
-    } else {
-      table.setData(selectedCourseList($('#tagList').val()));
-      createBadges($('#tagList').val());
-    }
-  });
-  $('#resetBtn').click(function() {
-    destroyBadges();
-    $('#tagList').multiselect('deselectAll', false);
-    $('#tagList').multiselect('updateButtonText');
-    table.setData(allCourses);
-  });
-
-	$(window).on('resize', function () {
-    table.redraw();
-	});
-
-});
 
 function fetchAllTags() {
   fetch(proxyurl+"ethereal-dawn.glitch.me/fetch/allTagObjects").then((response) => {
     response.json().then((jsonObj) => {
       jsonObj.forEach((tagObj) => {
         $('#tagList').append(new Option(tagObj.name.replace(/_/g," "),tagObj.name));
-        allTags.push(tagObj);
+        allTags.push(tagObj.name);
+        $('#tagList').multiselect('rebuild');
       });
-      $('#tagList').multiselect('rebuild');
     });
   });
 }
 
-function fetchAllCourses() {
-  fetch(proxyurl+"ethereal-dawn.glitch.me/fetch/allCourseObjects").then((response) => {
-    response.json().then((jsonObj) => {
-      jsonObj.forEach((course) => {
-        delete course.tags;
-        delete course.credit;
-        delete course.__v;
-      });
-      allCourses = jsonObj;
-      table.setData(allCourses);
-    });
-  });
-}
-
-function selectedCourseList(tagList) {
-  var selectedCourses = new Array();
-  var tagListObjs = allTags.filter( tag => tagList.indexOf(tag.name) in tagList);
-  var a = tagListObjs[0].courseList,b;
-  tagListObjs.forEach((tag) => {
-    b = tag.courseList;
-    let intersection = a.filter(x => b.includes(x));
-    a = intersection;
-  });
-  selectedCourses = a;
-  return allCourses.filter( course => selectedCourses.indexOf(course.courseCode) in selectedCourses)
-}
-
-function createBadges(tagList) {
-  $('#tagBadges').append('<div class="container" id="badgeWrapper"></div>');
+function getCourseList(tagList) {
   tagList.forEach((tag) => {
-    var txt = $('<span class="badge badge-secondary" style></span>').text(tag.replace(/_/g," "));
-    $('#badgeWrapper').append(txt);
-    $('#badgeWrapper > span').css({"margin-top": "10px", "margin-left": "5px", "margin-right": "5px"});
+    var tagUrl = "ethereal-dawn.glitch.me/fetch/tag/" + tag;
+
+    fetch(proxyurl+tagUrl).then((response) => {
+      response.json().then((jsonObj) => {
+        jsonObj.courseList.forEach((course) => {
+          if(courseList.indexOf(course) === -1) {
+            courseList.push(course);
+            getCourse(course);
+          }
+        });
+      });
+    });
   });
 }
 
-function destroyBadges() {
-  $('#badgeWrapper').remove();
+function getCourse(course) {
+    var courseUrl = "ethereal-dawn.glitch.me/fetch/course/" + course;
+
+    fetch(proxyurl+courseUrl).then((response) => {
+      response.json().then((jsonObj) => {
+        displayTable(jsonObj);
+      });
+    });
 }
+
+function displayTable(courseObj) {
+  var row = table.insertRow(-1);
+  var code = row.insertCell(0);
+  var name = row.insertCell(1);
+  var ltpc = row.insertCell(2);
+  var file = row.insertCell(3);
+
+  code.innerHTML = courseObj.courseCode;
+  name.innerHTML = courseObj.courseName;
+  ltpc.innerHTML = courseObj.ltpc;
+  file.innerHTML = courseObj.filename;
+}
+
+
+
+
+$(document).ready(function() {
+  $('#tagList').multiselect({
+    nonSelectedText: 'All',
+    buttonWidth: 200
+  });
+  var interval = setInterval(function(){
+    if($('#tagList').val().length===0) {
+      getCourseList(allTags);
+      if($('tbody > tr').length === courseList.length && courseList.length !==0) {
+        clearInterval(interval);
+      }
+    } else {
+      clearInterval(interval);
+    }
+  },1000);
+
+
+  $('#searchBtn').click(function() {
+    $('tbody').empty();
+    if($('#tagList').val().length===0) {
+      getCourseList(allTags);
+    }
+    courseList = new Array();
+    getCourseList($('#tagList').val());
+  });
+
+});

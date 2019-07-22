@@ -12,11 +12,12 @@ var table = new Tabulator("#table", {
   ],
   pagination: "local",
   paginationSize: 10,
+	responsiveLayout:true, // enable responsive layouts
   resizableColumns:false,
 	columns:[ //Define Table Columns
- 	{title:"Course Code", field:"courseCode"},
- 	{title:"Course Name", field:"courseName", formatter: "textarea" },
- 	{title:"LTPC", field:"ltpc"},
+ 	{title:"Code", field:"courseCode", widthGrow: 1, formatter: "textarea"},
+ 	{title:"Course Name", field:"courseName", formatter: "textarea", widthGrow:2},
+ 	{title:"LTPC", field:"ltpc", formatter: "textarea", widthGrow: 0.7},
  	{title:"File", field:"filename", formatter: "link", formatterParams: {
     label:"PDF file",
     target: "_blank",
@@ -51,6 +52,11 @@ $(document).ready(function() {
     $('#tagList').multiselect('updateButtonText');
     table.setData(allCourses);
   });
+
+	$(window).on('resize', function () {
+    table.redraw();
+	});
+
 });
 
 function fetchAllTags() {

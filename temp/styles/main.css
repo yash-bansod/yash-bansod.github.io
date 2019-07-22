@@ -7,6 +7,9 @@ html, body {
   #directory{
     display: none;
   }
+  #table {
+    font-size: 1vw;
+  }
 }
 
 @@media screen and (min-width: 769px) {
@@ -204,9 +207,7 @@ a[data-toggle="collapse"] {
 
 }
 
-#resetBtn{
-  position: absolute;
-}
+
 
 footer{
   background: lightgray;
