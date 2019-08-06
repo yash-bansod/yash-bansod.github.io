@@ -37,7 +37,7 @@ html, body {
 }
 
 #header-wrapper {
-  background-color: lightgray;
+  background-color: white;
 }
 
 #header{
@@ -70,8 +70,8 @@ ul{
 }
 
 .navbar {
-    padding: 15px 10px;
-    background: #fff;
+    /* padding: 15px 10px; */
+    background: #000;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
@@ -209,5 +209,6 @@ a[data-toggle="collapse"] {
 }
 
 footer{
-  background: lightgray;
+  background: black;
+  color: white;
 }
