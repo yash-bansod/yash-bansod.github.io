@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles/bootstrap.css" >
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tabulator.min.css">
+  	<link href="./styles/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     <!-- Font Awesome JS -->
@@ -18,6 +20,10 @@
     <title>IIT Mandi | Academics</title>
   </head>
   <body class="d-flex flex-column h-100">
+
+    <div class="preloader">
+
+    </div>
 
     <!-- Header -->
     <section id="header-wrapper" class="container-fluid" >
@@ -143,11 +149,26 @@
               <div id="content" class="container col-12 col-md-9">
                 <h2><u>Master of Science</u></h2><h3 class="text-secondary">(M.S)</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis finibus tortor, in lacinia justo. Etiam ultrices efficitur dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu blandit elit. Nam et volutpat massa. Sed pellentesque facilisis nisi, eget aliquet nunc bibendum sed. In hac habitasse platea dictumst. Aliquam auctor accumsan erat nec sagittis. Fusce ornare elit ut odio pharetra dapibus. Duis at nisl ut felis imperdiet ullamcorper eget ut lectus. Nulla elementum, ligula sed dapibus lacinia, tortor diam vulputate neque, iaculis egestas mauris nisi ut ex. Etiam placerat leo nulla, eget scelerisque eros gravida eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer non magna sit amet quam aliquam tincidunt vel id augue. Integer egestas ac est ac ornare. In dapibus mauris in accumsan convallis.</p>
-                <li><a href="#"><b>Lorem ipsum dolor sit amet.</b></a></li>
-                <li><a href="#"><b>Consectetur adipiscing elit.</b></a></li>
-                <li><a href="#"><b>Cras vitae velit congue</b></a></li>
-                <li><a href="#"><b>Vehicula orci at</b></a></li>
-                <li><a href="#"><b>Pulvinar libero</b></a></li>
+                <div class="dynamicTableContainer" >
+                    <div class="selectBoxContainer d-none" defaultOptions='["MSc"]'>
+
+                        <div>
+                            <select class="selectBox" multiple="multiple">
+                            </select>
+                        </div>
+
+                        <div>
+                            <button type="button" class="searchButton">Search</button>
+                            <button type="button" class="resetButton">Reset</button>
+                        </div>
+
+                    </div>
+
+                    <!-- Table -->
+                    <div class="dynamicTable">
+                        <!-- Dynamic -->
+                    </div>
+                </div>
               </div>
             </div>
           </div>
@@ -188,10 +209,13 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="scripts/jquery-3.4.1.js" ></script>
+    <script src="./scripts/jquery-3.4.1.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="scripts/bootstrap.min.js" ></script>
+    <script src="./scripts/bootstrap.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="./scripts/select2.min.js"></script>
+    <script src="./scripts/tabulator.min.js"></script>
+    <script type="text/javascript" src="./scripts/courseTable-m.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 </html>
