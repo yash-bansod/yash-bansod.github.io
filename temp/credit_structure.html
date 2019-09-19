@@ -35,40 +35,31 @@
           </div>
 
           <div class="sidebar-header">
-              <h3><a href="/">Academics</a></h3>
+              <h3><a href="index.html">Academics</a></h3>
           </div>
 
           <ul class="list-unstyled components">
-              <p class="text-muted">Items</p>
-              <li>
-                  <a href="#ugSide" data-toggle="collapse" aria-expanded="false"><b>Undergraduate</b></a>
-                  <ul class="collapse list-unstyled" id="ugSide">
-                    <li><a href="btech.html">B.Tech</a></li>
-                    <li><a href="dual_degree.html">Dual Degree</a></li>
-                  </ul>
-              </li>
-              <li>
-                  <a href="#pgSide" data-toggle="collapse" aria-expanded="false"><b>Postgraduate</b></a>
-                  <ul class="collapse list-unstyled" id="pgSide">
-                    <li><a href="mtech.html">M.Tech</a></li>
-                    <li><a href="ms.html">M.S</a></li>
-                    <li><a href="phd.html">Ph.D</a></li>
-                  </ul>
-              </li>
-              <li><a href="#ccmSide" data-toggle="collapse" aria-expanded="false"><b>Curriculum</b></a>
-                <ul class="collapse list-unstyled" id="ccmSide">
-                  <li><a href="perspective.html">Perspective of Curriculum</a></li>
-                  <li><a href="evaluation.html">Evaluation</a></li>
-                  <li><a href="credit_structure.html">Credit Structure</a></li>
-                  <li><a href="#">Sem-wise courses</a></li>
-                  <li><a href="#">Discipline wise courses</a></li>
-                  <li><a href="#">Basic Sciences</a></li>
-                  <li><a href="#">Common Engineering</a></li>
-                  <li><a href="#">Humanities and Social Sciences</a></li>
-                  <li><a href="#">Minor Program</a></li>
-                  <li><a href="#">Electice Courses</a></li>
+            <h4><p class="text-muted">Curriculum</p></h4>
+            <li>
+                <a href="#acadSide" data-toggle="collapse" aria-expanded="false"><b>Academic Programmes</b></a>
+                <ul class="collapse list-unstyled" id="acadSide">
+                  <li><a href="btech.html">B.Tech</a></li>
+                  <li><a href="dual_degree.html">Dual Degree</a></li>
+                  <li><a href="mtech.html">M.Tech</a></li>
+                  <li><a href="ms.html">M.S</a></li>
+                  <li><a href="phd.html">Ph.D</a></li>
                 </ul>
-              </li>
+            </li>
+            <li><a href="perspective.html">Perspective of Curriculum</a></li>
+            <li><a href="evaluation.html">Evaluation</a></li>
+            <li><a href="credit_structure.html">Credit Structure</a></li>
+            <li><a href="#">Sem-wise courses</a></li>
+            <li><a href="#">Discipline wise courses</a></li>
+            <li><a href="#">Basic Sciences</a></li>
+            <li><a href="#">Common Engineering</a></li>
+            <li><a href="#">Humanities and Social Sciences</a></li>
+            <li><a href="./btech.html#minor">Minor Program</a></li>
+            <li><a href="#">Electice Courses</a></li>
           </ul>
 
       </nav>
@@ -87,8 +78,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./admission.html">Admissions</a>
                         </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link" href="#" id="courses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Courses
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="schools">
+                            <a class="dropdown-item" href="./courses.html">Senate Approved Courses</a>
+                            <a class="dropdown-item" href="./archive.html">Archive</a>
+                          </div>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./courses.html">Courses</a>
+                            <a class="nav-link" href="./curriculum.html">Curriculum</a>
                         </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link" href="#" id="schools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -142,42 +142,34 @@
           <div class="container">
             <div class="row">
               <div id="directory" class="container col-md-3">
-                <h5><b>Items</b></h5>
-                <ul id="items">
-                  <li><a href="#ug" data-toggle="collapse" aria-expanded="false"><b>Undergraduate</b></a>
-                    <ul class="collapse list-unstyled" id="ug">
-                      <li><a href="btech.html">B.Tech</a></li>
-                      <li><a href="dual_degree.html">Dual Degree</a></li>
-                    </ul>
+                <h5><b>Curriculum</b></h5>
+                <ul class="list-unstyled components">
+                  <li>
+                      <a href="#acad" data-toggle="collapse" aria-expanded="false"><b>Academic Programmes</b></a>
+                      <ul class="collapse list-unstyled" id="acad">
+                        <li><a href="btech.html">B.Tech</a></li>
+                        <li><a href="mtech.html">M.Tech</a></li>
+                        <li><a href="ms.html">M.S</a></li>
+                        <li><a href="phd.html">Ph.D</a></li>
+                      </ul>
                   </li>
-                  <li><a href="#pg" data-toggle="collapse" aria-expanded="false"><b>Postgraduate</b></a>
-                  <ul class="collapse list-unstyled" id="pg">
-                      <li><a href="mtech.html">M.Tech</a></li>
-                      <li><a href="ms.html">M.S</a></li>
-                      <li><a href="phd.html">Ph.D</a></li>
-                  </ul>
-                </li>
-                <li><a href="#ccm" data-toggle="collapse" aria-expanded="false"><b>Curriculum</b></a>
-                  <ul class="collapse list-unstyled" id="ccm">
-                    <li><a href="perspective.html">Perspective of Curriculum</a></li>
-                    <li><a href="evaluation.html">Evaluation</a></li>
-                    <li><a href="credit_structure.html">Credit Structure</a></li>
-                    <li><a href="#">Sem-wise courses</a></li>
-                    <li><a href="#">Discipline wise courses</a></li>
-                    <li><a href="#">Basic Sciences</a></li>
-                    <li><a href="#">Common Engineering</a></li>
-                    <li><a href="#">Humanities and Social Sciences</a></li>
-                    <li><a href="#">Minor Program</a></li>
-                    <li><a href="#">Electice Courses</a></li>
-                  </ul>
-                </li>
+                  <li><a href="perspective.html">Perspective of Curriculum</a></li>
+                  <li><a href="evaluation.html">Evaluation</a></li>
+                  <li><a href="credit_structure.html">Credit Structure</a></li>
+                  <li><a href="#">Sem-wise courses</a></li>
+                  <li><a href="#">Discipline wise courses</a></li>
+                  <li><a href="#">Basic Sciences</a></li>
+                  <li><a href="#">Common Engineering</a></li>
+                  <li><a href="#">Humanities and Social Sciences</a></li>
+                  <li><a href="./btech.html#minor">Minor Program</a></li>
+                  <li><a href="#">Electice Courses</a></li>
                 </ul>
               </div>
               <div id="content" class="container col-12 col-md-9">
                 <h3><u>Overall Credit Structure of Common Core Courses</u></h3>
 
                 <ul><br>
-                <table border="1" class="table"><tr><td>Basic Sciences:</td><td>25 Credits</td></tr>
+                <table class="table-striped"><tr><td>Basic Sciences:</td><td>25 Credits</td></tr>
                 <tr><td>Computing and Electrical Engineering:</td><td>21 Credits</td></tr>
                 <tr><td>Engineering:</td><td>21 Credits</td></tr>
                 <tr><td>Design & Innovation Practicum: (D&IP):</td><td>6 Credits; 12 Credits (Elective)</td></tr>

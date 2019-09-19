@@ -1,4 +1,4 @@
-const baseURL = "https://cors-anywhere.herokuapp.com/ethereal-dawn.glitch.me";
+const baseURL = "https://cors-anywhere.herokuapp.com/milind712000-acad-web-app.glitch.me";
 var allTags, allCourses;
 
 var table = new Tabulator("#table", {
@@ -30,10 +30,10 @@ var table = new Tabulator("#table", {
 			field: "filename",
 			formatter: function(cell, formatterParams, onRendered){
 				const filename  = cell.getValue();
-				
+
 				// if file not present
 				if(filename === '#') return "No file present"
-				else return `<a href="${"https://ethereal-dawn.glitch.me/static/pdf/"+filename}" target="_blank" >PDF File</a>`;
+				else return `<a href="${"https://milind712000-acad-web-app.glitch.me/static/pdf/"+filename}" target="_blank" >PDF File</a>`;
 			}
 		},
 	],
