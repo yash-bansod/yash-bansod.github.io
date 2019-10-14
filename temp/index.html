@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles/bootstrap.css" >
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -65,7 +64,7 @@
                   <li><a href="#">Common Engineering</a></li>
                   <li><a href="#">Humanities and Social Sciences</a></li>
                   <li><a href="#">Minor Program</a></li>
-                  <li><a href="#">Electice Courses</a></li>
+                  <li><a href="#">Elective Courses</a></li>
                 </ul>
               </li>
           </ul>
@@ -74,9 +73,9 @@
       <!-- Page Content  -->
       <div id="content">
 
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <nav class="navbar navbar-expand-lg navbar-dark">
               <div class="container">
-                <a class="navbar-brand" href="index.html">Academics Home</a>
+                <a class="navbar-brand" href="index.html"><b>Academics Home</b></a>
                   <button class="btn btn-light d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <i class="fas fa-align-justify"></i>
                   </button>
@@ -84,11 +83,11 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="nav navbar-nav mr-auto">
                           <li class="nav-item">
-                              <a class="nav-link" href="./admission.html">Admissions</a>
+                              <a class="nav-link text-light" href="./admission.html"><b>Admissions</b></a>
                           </li>
                           <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="courses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Courses
+                            <a class="nav-link text-light" href="#" id="courses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <b>Courses</b>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="schools">
                               <a class="dropdown-item" href="./courses.html">Senate Approved Courses</a>
@@ -96,11 +95,11 @@
                             </div>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="./curriculum.html">Curriculum</a>
+                              <a class="nav-link text-light" href="./curriculum.html"><b>Curriculum</b></a>
                           </li>
                           <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="schools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Schools
+                            <a class="nav-link text-light" href="#" id="schools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <b>Schools</b>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="schools">
                               <a class="dropdown-item" href="http://iitmandi.ac.in/Schools/SCEE/index.php">SCEE</a>
@@ -110,23 +109,23 @@
                             </div>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="./fees.html">Fees</a>
+                              <a class="nav-link text-light" href="./fees.html"><b>Fees</b></a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="./calender.html">Calender</a>
+                              <a class="nav-link text-light" href="./calender.html"><b>Calender</b></a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="https://students.iitmandi.ac.in/international.php">International</a>
+                              <a class="nav-link text-light" href="https://students.iitmandi.ac.in/international.php"><b>International</b></a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="./senate.html">Senate</a>
+                              <a class="nav-link text-light" href="./senate.html"><b>Senate</b></a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="./contacts.html">Contact Us</a>
+                              <a class="nav-link text-light" href="./contacts.html"><b>Contact Us</b></a>
                           </li>
                           <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="links" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Important Links
+                            <a class="nav-link text-light" href="#" id="links" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <b>Important Links</b>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="schools">
                               <a class="dropdown-item" href="./why_iitmandi.html">Why study at IIT Mandi</a>
@@ -154,7 +153,7 @@
                   <div class="container">
                       <li>
                         <h5><b>Dean Academics</b></h5>
-                        <img src="./images/pardeep1.jpg" alt="Dean Academics" class="img-thumbnail" style="width: 150px">
+                        <img id="fac" src="./images/pardeep1.jpg" alt="Dean Academics" class="img-thumbnail" style="width: 150px">
                         <br>
                         <b>Dr. Pradeep Parameswaran</b>
                         <br>
@@ -167,7 +166,7 @@
                   <div class="container">
                     <li>
                       <h5><b>Associate Dean (Courses)</b></h5>
-                      <img src="./images/anil.jpg" alt="Associate Dean (Courses)" class="img-thumbnail" style="width: 150px">
+                      <img id="fac" src="./images/anil.jpg" alt="Associate Dean (Courses)" class="img-thumbnail" style="width: 150px">
                       <br>
                       <b>Dr. Anil Kumar Sao</b>
                       <br>
@@ -180,7 +179,7 @@
                   <div class="container">
                     <li>
                       <h5><b>Associate Dean (Research)</b></h5>
-                      <img src="./images/rahul.jpg" alt="Associate Dean (Research)" class="img-thumbnail" style="width: 150px">
+                      <img id="fac" src="./images/rahul.jpg" alt="Associate Dean (Research)" class="img-thumbnail" style="width: 150px">
                       <br>
                       <b>Dr. Rahul Vaish </b>
                       <br>
@@ -193,7 +192,7 @@
                   <div class="container">
                     <li>
                       <h5><b>Assistant Registrar (Academics)</b></h5>
-                      <img src="./images/vivek.jpg" alt="Assistant Registrar (Academics)" class="img-thumbnail" style="width: 150px">
+                      <img id="fac" src="./images/vivek.jpg" alt="Assistant Registrar (Academics)" class="img-thumbnail" style="width: 150px">
                       <br>
                       <b>Mr. Vivek Tiwari </b>
                       <br>
@@ -205,7 +204,8 @@
                 </ul>
               </div>
               <div id="content" class="container col-md-9">
-                <h2><u>Academic Structure</u></h2>
+                <h1 class="text-center"><u><b>Academic Structure</b></u></h1>
+                <br>
                 <p align="justify">Academic activities teaching, learning and research are carried out in 3 orthogonal but complementary structures. These are Faculty Schools, Student Degree Programmes and Research Groups. Each of these is designed to serve a distinct purpose. The 3 interact in flexible ways to best achieve the academic goals of the Institute. The structure encourages inter-disciplinary learning and research that evolves in step with the march of technological innovation.<br></br>
 
 Faculty belongs to broadly and loosing defined Schools. Each School provides a home base for faculty whose interests share some fundamental academic principles. Many faculty may have joint appointments in other schools. Degree Programmes are designed according to the job and career needs of students. A student in a given Degree Programme, say MTech (Green Energy), may be taught and guided by faculty from several Schools. Degree Programmes may be started and wound up based solely on job and student aspirations. Likewise, a Research Group is created as a focus for R&D towards some specific goal. The Group will draw on faculty and students from various schools and Degree Programmes. The Group may have technical and support staff on short-term contracts. Once the goal is achieved, the Group may be disbanded. Depending on its nature, a Group may be virtual with no dedicated physical space. A Group that needs space will get it on lease for a limited duration.<br>
@@ -222,7 +222,7 @@ Mechanical Engineering covers materials, manufacturing processes, design of mach
                 <div class="container">
                     <li>
                       <h5><b>Dean Academics</b></h5>
-                      <img src="./images/pardeep1.jpg" alt="Dean Academics" class="img-thumbnail" style="width: 150px">
+                      <img id="fac" src="./images/pardeep1.jpg" alt="Dean Academics" class="img-thumbnail" style="width: 150px">
                       <br>
                       <b>Dr. Pradeep Parameswaran</b>
                       <br>
@@ -235,7 +235,7 @@ Mechanical Engineering covers materials, manufacturing processes, design of mach
                 <div class="container">
                   <li>
                     <h5><b>Associate Dean (Courses)</b></h5>
-                    <img src="./images/anil.jpg" alt="Associate Dean (Courses)" class="img-thumbnail" style="width: 150px">
+                    <img id="fac" src="./images/anil.jpg" alt="Associate Dean (Courses)" class="img-thumbnail" style="width: 150px">
                     <br>
                     <b>Dr. Anil Kumar Sao</b>
                     <br>
@@ -248,7 +248,7 @@ Mechanical Engineering covers materials, manufacturing processes, design of mach
                 <div class="container">
                   <li>
                     <h5><b>Associate Dean (Research)</b></h5>
-                    <img src="./images/rahul.jpg" alt="Associate Dean (Research)" class="img-thumbnail" style="width: 150px">
+                    <img id="fac" src="./images/rahul.jpg" alt="Associate Dean (Research)" class="img-thumbnail" style="width: 150px">
                     <br>
                     <b>Dr. Rahul Vaish </b>
                     <br>
@@ -261,7 +261,7 @@ Mechanical Engineering covers materials, manufacturing processes, design of mach
                 <div class="container">
                   <li>
                     <h5><b>Assistant Registrar (Academics)</b></h5>
-                    <img src="./images/vivek.jpg" alt="Assistant Registrar (Academics)" class="img-thumbnail" style="width: 150px">
+                    <img id="fac" src="./images/vivek.jpg" alt="Assistant Registrar (Academics)" class="img-thumbnail" style="width: 150px">
                     <br>
                     <b>Mr. Vivek Tiwari </b>
                     <br>

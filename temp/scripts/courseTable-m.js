@@ -36,7 +36,7 @@ $(document).ready(async function () {
                 dir: "asc"
             }, ],
             pagination: "local",
-            paginationSize: 10,
+            paginationSize: 20,
             resizableColumns: false,
             columns: [ //Define Table Columns
                 {
