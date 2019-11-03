@@ -27,12 +27,12 @@ h3,h4 {
   #sidebarCollapse{
     display: none;
   }
-  
+
 }
 
 
 .preloader {
-  background: #ffffff url("/images/preloder.gif") no-repeat center;
+  background: #ffffff url("/acad-frontend-demo/images/preloder.gif") no-repeat center;
   background-attachment: fixed;
   display: block;
   text-align: center;
@@ -232,6 +232,11 @@ a[data-toggle="collapse"] {
     transition: all 0.3s;
 
 }
+
+/* .dropdown:hover .dropdown-menu {
+    display: block !important;
+    margin-top: 0; // remove the gap so it doesn't close
+ } */
 
 table, th, td {
   border: 3px groove #0a8ea0;

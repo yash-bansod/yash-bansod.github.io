@@ -1,4 +1,4 @@
-const baseURL = "https://cors-anywhere.herokuapp.com/milind712000-acad-web-app.glitch.me";
+const baseURL = "https://cors-anywhere.herokuapp.com/iitmandi.co.in:6996";
 var allTags, allCourses;
 
 var table = new Tabulator("#table", {
@@ -9,7 +9,7 @@ var table = new Tabulator("#table", {
 		dir: "asc"
 	}, ],
 	pagination: "local",
-	paginationSize: 10,
+	paginationSize: 20,
 	resizableColumns: false,
 	columns: [ //Define Table Columns
 		{
@@ -33,7 +33,7 @@ var table = new Tabulator("#table", {
 
 				// if file not present
 				if(filename === '#') return "No file present"
-				else return `<a href="${"https://milind712000-acad-web-app.glitch.me/static/pdf/"+filename}" target="_blank" >PDF File</a>`;
+				else return `<a href="${"http://iitmandi.co.in:6996/static/pdf/"+filename}" target="_blank" >PDF File</a>`;
 			}
 		},
 	],

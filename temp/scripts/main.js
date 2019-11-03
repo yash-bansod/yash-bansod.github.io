@@ -14,6 +14,10 @@ $(document).ready(function () {
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
+
+    // $('.dropdown').hover(function(){
+    //   $('.dropdown', this).trigger('click');
+    // });
 });
 
 // $(window).on('load', function() {

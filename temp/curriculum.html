@@ -41,24 +41,25 @@
           <ul class="list-unstyled components">
             <h4><p class="text-muted">Curriculum</p></h4>
             <li>
-                <a href="#acadSide" data-toggle="collapse" aria-expanded="false"><b>Academic Programmes</b></a>
+                <a href="#acadSide" data-toggle="collapse" aria-expanded="false"><b><h5>Academic Programmes</h5></b></a>
                 <ul class="collapse list-unstyled" id="acadSide">
-                  <li><a href="btech.html">B.Tech</a></li>
-                  <li><a href="mtech.html">M.Tech</a></li>
-                  <li><a href="ms.html">M.S</a></li>
-                  <li><a href="phd.html">Ph.D</a></li>
+                  <li><a href="#btechSide" data-toggle="collapse" aria-expanded="false">B.Tech. </a><a href="btech.html">Visit</a> </li>
+                  <ul class="collapse list-unstyled" id="btechSide">
+                    <li><a href="./cse.html">Computer Science and Engineering <b>(C.S.E.)</b></a> </li>
+                    <li><a href="./ee.html">Electrical Engineering <b>(E.E.)</b></a> </li>
+                    <li><a href="./me.html">Mechanical Engineering <b>(M.E.)</b> </a> </li>
+                    <li><a href="./be.html">Bio-Engineering <b>(B.Tech.-M.Tech. Dual Degree)</b> </a> </li>
+                    <li><a href="./ce.html">Civil Engineering <b>(C.E)</b> </a> </li>
+                    <li><a href="./ep.html">Engineering Physics <b>(E.P)</b> </a> </li>
+                    <li><a href="./dse.html">Data Science Engineering <b>(D.S.E)</b> </a> </li>
+                  </ul>
+                  <li><a href="mtech.html">M.Tech.</a></li>
+                  <li><a href="ms.html">M.S.</a></li>
+                  <li><a href="phd.html">Ph.D.</a></li>
                 </ul>
             </li>
-            <li><a href="perspective.html">Perspective of Curriculum</a></li>
-            <li><a href="evaluation.html">Evaluation</a></li>
-            <li><a href="credit_structure.html">Credit Structure</a></li>
-            <li><a href="#">Sem-wise courses</a></li>
-            <li><a href="#">Discipline wise courses</a></li>
-            <li><a href="#">Basic Sciences</a></li>
-            <li><a href="#">Common Engineering</a></li>
-            <li><a href="#">Humanities and Social Sciences</a></li>
-            <li><a href="#">Minor Program</a></li>
-            <li><a href="#">Elective Courses</a></li>
+            <li><a href="evaluation.html">Evaluation and Grading System</a></li>
+
           </ul>
 
       </nav>
@@ -104,7 +105,7 @@
                             <a class="nav-link text-light" href="./fees.html"><b>Fees</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="./calender.html"><b>Calender</b></a>
+                            <a class="nav-link text-light" href="./calender.html"><b>Calendar</b></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="https://students.iitmandi.ac.in/international.php"><b>International</b></a>
@@ -119,13 +120,25 @@
                           <a class="nav-link text-light" href="#" id="links" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <b>Important Links</b>
                           </a>
-                          <div class="dropdown-menu" aria-labelledby="schools">
+                          <div class="dropdown-menu" aria-labelledby="links">
                             <a class="dropdown-item" href="./why_iitmandi.html">Why study at IIT Mandi</a>
                             <a class="dropdown-item" href="./scholarships.html">Scholarships</a>
                             <a class="dropdown-item" href="./internships.html">Internships</a>
-                            <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
+                            <a class="dropdown-item dropright" href="#" id="ordinance" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ordinances</a>
+                            <ul class="dropdown-menu" aria-labelledby="ordinance">
+                              <li>
+                                <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.Tech./M.Sc. Ordinances &amp; Regulations</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a>
+                              </li>
+                            </ul>
+                            <!-- <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
                             <a class="dropdown-item" href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.Tech./M.Sc. Ordinances &amp; Regulations</a>
-                            <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a>
+                            <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a> -->
                             <a class="dropdown-item" href="./branch_change.html">Branch Change</a>
                             <a class="dropdown-item" href="./online_resources.html">Online Resources</a>
                             <a class="dropdown-item" href="./registration.html">Registration</a>
@@ -144,24 +157,26 @@
                 <h5><b>Curriculum</b></h5>
                 <ul class="list-unstyled components">
                   <li>
-                      <a href="#acad" data-toggle="collapse" aria-expanded="false"><b>Academic Programmes</b></a>
-                      <ul class="collapse list-unstyled" id="acad">
-                        <li><a href="btech.html">B.Tech</a></li>
-                        <li><a href="mtech.html">M.Tech</a></li>
-                        <li><a href="ms.html">M.S</a></li>
-                        <li><a href="phd.html">Ph.D</a></li>
+                      <a href="#"><b><h5>Academic Programmes</h5></b></a>
+                      <ul class="list-unstyled">
+                        <li><a href="#btech" data-toggle="collapse" aria-expanded="false">B.Tech.</a><a href="btech.html">    <b>(Visit)</b></a>
+                          <ul class="collapse list-unstyled" id="btech">
+                            <li><a href="./cse.html">Computer Science and Engineering <b>(C.S.E.)</b></a> </li>
+                            <li><a href="./ee.html">Electrical Engineering <b>(E.E.)</b></a> </li>
+                            <li><a href="./me.html">Mechanical Engineering <b>(M.E.)</b> </a> </li>
+                            <li><a href="./be.html">Bio-Engineering <b>(B.Tech.-M.Tech. Dual Degree)</b> </a> </li>
+                            <li><a href="./ce.html">Civil Engineering <b>(C.E)</b> </a> </li>
+                            <li><a href="./ep.html">Engineering Physics <b>(E.P)</b> </a> </li>
+                            <li><a href="./dse.html">Data Science Engineering <b>(D.S.E)</b> </a> </li>
+                          </ul>
+                        </li>
+                        <li><a href="mtech.html">M.Tech.</a></li>
+                        <li><a href="ms.html">M.S.</a></li>
+                        <li><a href="phd.html">Ph.D.</a></li>
                       </ul>
                   </li>
-                  <li><a href="perspective.html">Perspective of Curriculum</a></li>
-                  <li><a href="evaluation.html">Evaluation</a></li>
-                  <li><a href="credit_structure.html">Credit Structure</a></li>
-                  <li><a href="#">Sem-wise courses</a></li>
-                  <li><a href="#">Discipline wise courses</a></li>
-                  <li><a href="#">Basic Sciences</a></li>
-                  <li><a href="#">Common Engineering</a></li>
-                  <li><a href="#">Humanities and Social Sciences</a></li>
-                  <li><a href="#">Minor Program</a></li>
-                  <li><a href="#">Elective Courses</a></li>
+                  <li><a href="evaluation.html">Evaluation and Grading System</a></li>
+
                 </ul>
               </div>
               <div id="content" class="container col-12 col-md-9">
@@ -174,7 +189,21 @@
                 <h3>Academic Programmes</h3>
                 <br>
                 <ul id="items" class="list-group">
-                  <li><a class="list-group-item" href="./btech.html"><h5>Bachelor Of Technology (B.Tech)</h5></a></li>
+                  <li class="list-group-item"><a href="./btech.html"><h5>Bachelor Of Technology (B.Tech.)</h5></a>
+                    <div class="row">
+                      <ul class="column">
+                        <li><a href="./cse.html">Computer Science and Engineering (C.S.E.)</a> </li>
+                        <li><a href="./ee.html">Electrical Engineering (E.E.)</a> </li>
+                        <li><a href="./me.html">Mechanical Engineering (M.E.)</a> </li>
+                        <li><a href="./be.html">Bio-Engineering (B.Tech.-M.Tech. Dual Degree)</a> </li>
+                      </ul>
+                      <ul class="column">
+                        <li><a href="./ce.html">Civil Engineering (C.E)</a> </li>
+                        <li><a href="./ep.html">Engineering Physics (E.P)</a> </li>
+                        <li><a href="./dse.html">Data Science Engineering (D.S.E)</a> </li>
+                      </ul>
+                    </div>
+                  </li>
                   <li><a class="list-group-item" href="./mtech.html"><h5>Master of Technology (M.Tech)</h5></a></li>
                   <li><a class="list-group-item" href="./ms.html"><h5>Master of Science (M.S)</h5></a></li>
                   <li><a class="list-group-item" href="./phd.html"><h5>Doctor of Philosophy (Ph.D)</h5></a></li>
