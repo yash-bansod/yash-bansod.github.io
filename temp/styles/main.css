@@ -32,7 +32,7 @@ h3,h4 {
 
 
 .preloader {
-  background: #ffffff url("/acad-frontend-demo/images/preloder.gif") no-repeat center;
+  background: #ffffff url("/temp/images/preloder.gif") no-repeat center;
   background-attachment: fixed;
   display: block;
   text-align: center;
