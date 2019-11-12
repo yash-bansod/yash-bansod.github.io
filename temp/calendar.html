@@ -8,8 +8,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles/bootstrap.css" >
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/tabulator.min.css">
-  	<link href="./styles/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     <!-- Font Awesome JS -->
@@ -21,10 +19,6 @@
   </head>
   <body class="d-flex flex-column h-100">
 
-    <div class="preloader">
-
-    </div>
-
     <!-- Header -->
     <section id="header-wrapper" class="container-fluid" >
       <div id="header" class="container text-center">
@@ -32,66 +26,63 @@
       </div>
     </section>
 
-
     <div class="wrapper">
       <!-- Sidebar  -->
-      <nav id="sidebar">
+      <!-- <nav id="sidebar">
           <div id="dismiss">
               <i class="fas fa-arrow-left"></i>
           </div>
 
           <div class="sidebar-header">
-              <h3><a href="index.html">Academics</a></h3>
+              <h3><a href="/">Academics</a></h3>
           </div>
 
           <ul class="list-unstyled components">
-            <h4><p class="text-muted">Curriculum</p></h4>
-            <li>
-                <a href="#acadSide" data-toggle="collapse" aria-expanded="false"><b><h5>Academic Programmes</h5></b></a>
-                <ul class="list-unstyled" id="acadSide">
-                  <li><a href="#btechSide" data-toggle="collapse" aria-expanded="false"><b>B.Tech. </b></a><a href="btech.html"><b>(Visit)</b></a>
-                  <ul class="collapse list-unstyled" id="btechSide">
-                    <li><a href="./cse.html">Computer Science and Engineering (C.S.E)</a> </li>
-                    <li><a href="./ee.html">Electrical Engineering (E.E)</a> </li>
-                    <li><a href="./me.html">Mechanical Engineering (M.E) </a> </li>
-                    <li><a href="./be.html">Bio-Engineering (B.Tech.-M.Tech. Dual Degree) </a> </li>
-                    <li><a href="./ce.html">Civil Engineering (C.E.) </a> </li>
-                    <li><a href="./ep.html">Engineering Physics (E.P.) </a> </li>
-                    <li><a href="./dse.html">Data Science Engineering (D.S.E.) </a> </li>
-                    <li><a href="./btech.html#credits">Credits Structure</a></li>
-                    <li><a href="./btech.html#minor">Minor Programme</a> </li>
-                    <li><a href="./btech.html#honors">Requirements for Btech Honors</a> </li>
+              <p class="text-muted">Items</p>
+              <li>
+                  <a href="#ugSide" data-toggle="collapse" aria-expanded="false"><b>Undergraduate</b></a>
+                  <ul class="collapse list-unstyled" id="ugSide">
+                    <li><a href="btech.html">B.Tech</a></li>
+                    <li><a href="dual_degree.html">Dual Degree</a></li>
                   </ul>
-                  </li>
-                  <li><a href="mtech.html">M.Tech.</a></li>
-                  <li><a href="ms.html">M.S.</a></li>
-                  <li><a href="phd.html">Ph.D.</a></li>
+              </li>
+              <li>
+                  <a href="#pgSide" data-toggle="collapse" aria-expanded="false"><b>Postgraduate</b></a>
+                  <ul class="collapse list-unstyled" id="pgSide">
+                    <li><a href="mtech.html">M.Tech</a></li>
+                    <li><a href="ms.html">M.S</a></li>
+                    <li><a href="phd.html">Ph.D</a></li>
+                  </ul>
+              </li>
+              <li><a href="#ccmSide" data-toggle="collapse" aria-expanded="false"><b>Curriculum</b></a>
+                <ul class="collapse list-unstyled" id="ccmSide">
+                  <li><a href="perspective.html">Perspective of Curriculum</a></li>
+                  <li><a href="evaluation.html">Evaluation</a></li>
+                  <li><a href="credit_structure.html">Credit Structure</a></li>
+                  <li><a href="#">Sem-wise courses</a></li>
+                  <li><a href="#">Discipline wise courses</a></li>
+                  <li><a href="#">Basic Sciences</a></li>
+                  <li><a href="#">Common Engineering</a></li>
+                  <li><a href="#">Humanities and Social Sciences</a></li>
+                  <li><a href="#">Minor Program</a></li>
+                  <li><a href="#">Elective Courses</a></li>
                 </ul>
-            </li>
-            <li><a href="evaluation.html">Evaluation and Grading System</a></li>
-            <li><a href="#ordinanceSide" data-toggle="collapse" aria-expanded="false">Ordinances</a>
-              <ul class="collapse list-unstyled" id="ordinanceSide">
-                <li><a href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech. Ordinances</a></li>
-                <li><a href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.tech./M.Sc. Ordinances </a></li>
-                <li><a href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S./Ph.D. Ordinances</a> </li>
-              </ul>
-            </li>
-
+              </li>
           </ul>
 
-      </nav>
+      </nav> -->
       <!-- Page Content  -->
       <div id="content">
 
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
+            <div class="container-fluid w-100">
               <a class="navbar-brand" href="index.html"><b>Academics Home</b></a>
                 <button class="btn btn-light d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-align-justify"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav mr-auto">
+                    <ul class="nav navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link text-light" href="./admission.html"><b>Admissions</b></a>
                         </li>
@@ -127,8 +118,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" href="https://students.iitmandi.ac.in/international.php"><b>International</b></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="./senate.html"><b>Senate</b></a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link text-light" href="#" id="academicBodies" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>Academic Bodies</b>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="academicBodies">
+                            <a class="dropdown-item" href="./senate.html">Senate</a>
+                            <a class="dropdown-item" href="./boa.html">Board of Academics</a>
+                            <a class="dropdown-item" href="./cig.html">Course Interest Group</a>
+                            <a class="dropdown-item" href="./cpc.html">Course Proposal Committee</a>
+                            <a class="dropdown-item" href="./course_coordinator.html">Course Co-ordinators</a>
+                            <a class="dropdown-item" href="./fa.html">Faculty Advisors</a>
+                            <a class="dropdown-item" href="./lac.html">Library Advisory Council</a>
+                          </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="./contacts.html"><b>Contact Us</b></a>
@@ -170,76 +172,60 @@
         </nav>
           <div class="container">
             <div class="row">
-              <div id="directory" class="container col-md-3">
-                <h5><b>Curriculum</b></h5>
-                <ul class="list-unstyled components">
-                  <li>
-                      <a href="#"><b><h5>Academic Programmes</h5></b></a>
-                      <ul class="list-unstyled">
-                        <li><a href="#btech" data-toggle="collapse" aria-expanded="false">B.Tech</a><a href="btech.html"><b> (Visit)</b></a>
-                          <ul class="collapse list" style="list-style-type:circle;" id="btech">
-                            <li><a href="./cse.html">Computer Science and Engineering (C.S.E)</a> </li>
-                            <li><a href="./ee.html">Electrical Engineering (E.E)</a> </li>
-                            <li><a href="./me.html">Mechanical Engineering (M.E) </a> </li>
-                            <li><a href="./ce.html">Civil Engineering (C.E.) </a> </li>
-                            <li><a href="./ep.html">Engineering Physics (E.P.) </a> </li>
-                            <li><a href="./dse.html">Data Science Engineering (D.S.E.) </a> </li>
-                            <li><a href="./be.html">Bio-Engineering (B.Tech.-M.Tech. Dual Degree) </a> </li>
-                            <li><a href="./btech.html#credits">Credits Structure</a></li>
-                            <li><a href="./btech.html#minor">Minor Programme</a> </li>
-                            <li><a href="./btech.html#honors">Requirements for Btech Honors</a> </li>
-                          </ul>
-                        </li>
-
-                        <li><a href="mtech.html">M.Tech.</a></li>
-                        <li><a href="ms.html">M.S.</a></li>
-                        <li><a href="phd.html">Ph.D.</a></li>
-                      </ul>
-                  </li>
-                  <li><a href="evaluation.html">Evaluation and Grading System</a></li>
-                  <li><a href="#ordinances" data-toggle="collapse" aria-expanded="false">Ordinances</a>
-                    <ul class="collapse list-unstyled" id="ordinances">
-                      <li><a href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech. Ordinances</a></li>
-                      <li><a href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.tech./M.Sc. Ordinances </a></li>
-                      <li><a href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S./Ph.D. Ordinances</a> </li>
-                    </ul>
-                  </li>
-
-
-                </ul>
-              </div>
-              <div id="content" class="container col-12 col-md-9">
-                <h1><u>Master of Science</u></h1><h3 class="text-secondary">(M.S)</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis finibus tortor, in lacinia justo. Etiam ultrices efficitur dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu blandit elit. Nam et volutpat massa. Sed pellentesque facilisis nisi, eget aliquet nunc bibendum sed. In hac habitasse platea dictumst. Aliquam auctor accumsan erat nec sagittis. Fusce ornare elit ut odio pharetra dapibus. Duis at nisl ut felis imperdiet ullamcorper eget ut lectus. Nulla elementum, ligula sed dapibus lacinia, tortor diam vulputate neque, iaculis egestas mauris nisi ut ex. Etiam placerat leo nulla, eget scelerisque eros gravida eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer non magna sit amet quam aliquam tincidunt vel id augue. Integer egestas ac est ac ornare. In dapibus mauris in accumsan convallis.</p>
-                <div class="dynamicTableContainer" >
-                    <div class="selectBoxContainer d-none" defaultOptions='["MSc"]'>
-
-                        <div>
-                            <select class="selectBox" multiple="multiple">
-                            </select>
-                        </div>
-
-                        <div>
-                            <button type="button" class="searchButton">Search</button>
-                            <button type="button" class="resetButton">Reset</button>
-                        </div>
-
-                    </div>
-
-                    <!-- Table -->
-                    <div class="dynamicTable">
-                        <!-- Dynamic -->
-                    </div>
-                </div>
+              <div id="content" class="container">
+                <h1><u>Calendar</u></h1>
+                <!-- Academic calendar for the even semester (Feb-June) 2019 and odd semester (Aug-Dec) 2019 <a href="files/Academic_Calender_2019.pdf"> (<b>Click Here</b>)</a>
+                <br><br>
+                <h3>Old Calenders</h3>
+                <ul>
+      				    <li>1. Academic calendar for the B.Tech 1st year, Odd Semester (Aug-Dec) 2018 <a href="files/btech_1styear_2018batch.pdf"> (<b>Click Here</b>)</a></li>
+      				    <li>2. Academic calendar for the even semester (Feb-June) 2018 and odd semester (Aug-Dec) 2018 <a href="files/Calendar_2018.pdf"> (<b>Click Here</b>)</a></li>
+        					<li>3. Academic calendar for the odd semester (Aug-Dec) 2017 of academic year 2017-18 <a href="files/Calender_Odd_2017.pdf"> (<b>Click Here</b>)</a>.</li>
+      	          <li>4. Academic calendar for Btech 1st Year 2017 batch for the odd semester (Aug-Dec) 2017 for  academic year 2017-18 <a href="files/calendar_2017_btech_1stsem.pdf">(Click Here) </a>.</li>
+        					<li>5. Academic calendar for the even semester (Feb-June) 2017 of academic year 2016-17 <a href="files/acad_calendar2016-17.pdf"> (<b>Click Here</b>)</a>.</li>
+                  <li>6. Academic calendar for the even semester (Aug-Dec) 2016 of academic year 2016-17 <a href="files/Calendar_AY_2016-17_Aug-Dec_2016_Final.pdf"> (<b>Click Here</b>)</a>.</li>
+                  <li>7. Academic calendar for the even semester (Feb-June) 2016 of academic year 2015-16 <a href="files/Calendar_AY_2015-16_Feb-June_2016_Final.pdf"> (<b>Click Here</b>)</a>.</li>
+      				</ul> -->
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Academic Year</th>
+                    <th>Calendar</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>2019</td>
+                  <td><a href="files/Academic_Calender_2019.pdf" target="_blank">Odd and Even Sem.</a>
+                  <br><a href="files/Academic_Calender_2019_1st-Year.pdf" target="_blank">B.tech. 1st Year, Odd Sem.</a> </td>
+                </tr>
+                <tr>
+                  <td>2018</td>
+                  <td><a href="files/Calendar_2018.pdf" target="_blank">Odd and Even Sem.</a>
+                  <br><a href="files/btech_1styear_2018batch.pdf" target="_blank">B.tech. 1st Year, Odd Sem.</a> </td>
+                </tr>
+                <tr>
+                  <td>2017</td>
+                  <td><a href="files/acad_calendar2016-17.pdf" target="_blank">Even Sem. (Feb-June)</a>
+                  <br><a href="files/Calender_Odd_2017.pdf" target="_blank">Odd Sem. (Aug-Dec)</a>
+                  <br><a href="files/calendar_2017_btech_1stsem.pdf" target="_blank">B.tech. 1st Year, Odd Sem.</a>
+                </tr>
+                <tr>
+                  <td>2016</td>
+                  <td><a href="files/Calendar_AY_2015-16_Feb-June_2016_Final.pdf" target="_blank">Even Sem. (Feb-June)</a>
+                  <br><a href="files/Calendar_AY_2016-17_Aug-Dec_2016_Final.pdf" target="_blank">Odd Sem. (Aug-Dec)</a>
+                </tr>
+              </table>
               </div>
             </div>
           </div>
         </div>
     </div>
-    <button type="button" id="sidebarCollapse" class="btn btn-dark d-inline-block d-md-none ml-auto">
+
+    <!-- <button type="button" id="sidebarCollapse" class="btn btn-dark d-inline-block d-md-none ml-auto">
         <i class="fas fa-align-left"></i>
     </button>
-    <div class="overlay"></div>
+
+    <div class="overlay"></div> -->
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3">
@@ -271,13 +257,10 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./scripts/jquery-3.4.1.js" ></script>
+    <script src="scripts/jquery-3.4.1.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="./scripts/bootstrap.min.js" ></script>
+    <script src="scripts/bootstrap.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="./scripts/select2.min.js"></script>
-    <script src="./scripts/tabulator.min.js"></script>
-    <script type="text/javascript" src="./scripts/courseTable-m.js"></script>
-    <script type="text/javascript" src="./scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

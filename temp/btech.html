@@ -35,137 +35,102 @@
 
     <div class="wrapper">
       <!-- Sidebar  -->
-      <nav id="sidebar">
-          <div id="dismiss">
-              <i class="fas fa-arrow-left"></i>
-          </div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><b>Academics Home</b></a>
+              <button class="btn btn-light d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-align-justify"></i>
+              </button>
 
-          <div class="sidebar-header">
-              <h3><a href="index.html">Academics</a></h3>
-          </div>
-
-          <ul class="list-unstyled components">
-            <h4><p class="text-muted">Curriculum</p></h4>
-            <li>
-                <a href="#acadSide" data-toggle="collapse" aria-expanded="false"><b><h5>Academic Programmes</h5></b></a>
-                <ul class="list-unstyled" id="acadSide">
-                  <li><a href="#btechSide" data-toggle="collapse" aria-expanded="false"><b>B.Tech. </b></a></li>
-                  <ul class="list-unstyled" id="btechSide">
-                    <li><a href="./cse.html">Computer Science and Engineering <b>(C.S.E.)</b></a> </li>
-                    <li><a href="./ee.html">Electrical Engineering <b>(E.E.)</b></a> </li>
-                    <li><a href="./me.html">Mechanical Engineering <b>(M.E.)</b> </a> </li>
-                    <li><a href="./be.html">Bio-Engineering <b>(B.Tech.-M.Tech. Dual Degree)</b> </a> </li>
-                    <li><a href="./ce.html">Civil Engineering <b>(C.E)</b> </a> </li>
-                    <li><a href="./ep.html">Engineering Physics <b>(E.P)</b> </a> </li>
-                    <li><a href="./dse.html">Data Science Engineering <b>(D.S.E)</b> </a> </li>
-                    <li><a href="./btech.html#credits">Credits Structure</a></li>
-                    <li><a href="./btech.html#minor">Minor Programme</a> </li>
-                    <li><a href="./btech.html#honors">Requirements for Btech Honors</a> </li>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav navbar-nav mx-auto">
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="./admission.html"><b>Admissions</b></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" id="courses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <b>Courses</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="schools">
+                          <a class="dropdown-item" href="./courses.html">Senate Approved Courses</a>
+                          <a class="dropdown-item" href="./archive.html">Archive</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="./curriculum.html"><b>Curriculum</b></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" id="schools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <b>Schools</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="schools">
+                          <a class="dropdown-item" href="http://iitmandi.ac.in/Schools/SCEE/index.php">SCEE</a>
+                          <a class="dropdown-item" href="http://iitmandi.ac.in/Schools/SBS/index.php">SBS</a>
+                          <a class="dropdown-item" href="http://iitmandi.ac.in/Schools/SE/index.php">SE</a>
+                          <a class="dropdown-item" href="http://iitmandi.ac.in/Schools/SHSS/index.php">SHSS</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="./fees.html"><b>Fees</b></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="./calendar.html"><b>Calendar</b></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="https://students.iitmandi.ac.in/international.php"><b>International</b></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" id="academicBodies" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <b>Academic Bodies</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="academicBodies">
+                          <a class="dropdown-item" href="./senate.html">Senate</a>
+                          <a class="dropdown-item" href="./boa.html">Board of Academics</a>
+                          <a class="dropdown-item" href="./cig.html">Course Interest Group</a>
+                          <a class="dropdown-item" href="./cpc.html">Course Proposal Committee</a>
+                          <a class="dropdown-item" href="./course_coordinator.html">Course Co-ordinators</a>
+                          <a class="dropdown-item" href="./fa.html">Faculty Advisors</a>
+                          <a class="dropdown-item" href="./lac.html">Library Advisory Council</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="./contacts.html"><b>Contact Us</b></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link text-light" href="#" id="links" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <b>Important Links</b>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="links">
+                          <a class="dropdown-item" href="./why_iitmandi.html">Why study at IIT Mandi</a>
+                          <a class="dropdown-item" href="./scholarships.html">Scholarships</a>
+                          <a class="dropdown-item" href="./internships.html">Internships</a>
+                          <a class="dropdown-item dropright" href="#" id="ordinance" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ordinances</a>
+                          <ul class="dropdown-menu" aria-labelledby="ordinance">
+                            <li>
+                              <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.Tech./M.Sc. Ordinances &amp; Regulations</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a>
+                            </li>
+                          </ul>
+                          <!-- <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
+                          <a class="dropdown-item" href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.Tech./M.Sc. Ordinances &amp; Regulations</a>
+                          <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a> -->
+                          <a class="dropdown-item" href="./branch_change.html">Branch Change</a>
+                          <a class="dropdown-item" href="./online_resources.html">Online Resources</a>
+                          <a class="dropdown-item" href="./registration.html">Registration</a>
+                          <a class="dropdown-item" href="./seminar.html">Seminars and Colloquium</a>
+                          <a class="dropdown-item" href="./convocation.html">Convocation</a>
+                          <a class="dropdown-item" href="http://alumni.iitmandi.ac.in/degrees/">Degrees Awarded</a>
+                        </div>
+                      </li>
                   </ul>
-                  <li><a href="mtech.html">M.Tech.</a></li>
-                  <li><a href="ms.html">M.S.</a></li>
-                  <li><a href="phd.html">Ph.D.</a></li>
-                </ul>
-            </li>
-            <li><a href="evaluation.html">Evaluation and Grading System</a></li>
-            <li><a href="#ordinanceSide" data-toggle="collapse" aria-expanded="false">Ordinances</a>
-              <ul class="collapse list-unstyled" id="ordinanceSide">
-                <li><a href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech. Ordinances</a></li>
-                <li><a href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.tech./M.Sc. Ordinances </a></li>
-                <li><a href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S./Ph.D. Ordinances</a> </li>
-              </ul>
-            </li>
-          </ul>
-
+              </div>
+          </div>
       </nav>
-      <!-- Page Content  -->
-      <div id="content">
-
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-              <a class="navbar-brand" href="index.html"><b>Academics Home</b></a>
-                <button class="btn btn-light d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-align-justify"></i>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="./admission.html"><b>Admissions</b></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link text-light" href="#" id="courses" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <b>Courses</b>
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="schools">
-                            <a class="dropdown-item" href="./courses.html">Senate Approved Courses</a>
-                            <a class="dropdown-item" href="./archive.html">Archive</a>
-                          </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="./curriculum.html"><b>Curriculum</b></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link text-light" href="#" id="schools" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <b>Schools</b>
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="schools">
-                            <a class="dropdown-item" href="http://iitmandi.ac.in/Schools/SCEE/index.php">SCEE</a>
-                            <a class="dropdown-item" href="http://iitmandi.ac.in/Schools/SBS/index.php">SBS</a>
-                            <a class="dropdown-item" href="http://iitmandi.ac.in/Schools/SE/index.php">SE</a>
-                            <a class="dropdown-item" href="http://iitmandi.ac.in/Schools/SHSS/index.php">SHSS</a>
-                          </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="./fees.html"><b>Fees</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="./calender.html"><b>Calendar</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="https://students.iitmandi.ac.in/international.php"><b>International</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="./senate.html"><b>Senate</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="./contacts.html"><b>Contact Us</b></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link text-light" href="#" id="links" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <b>Important Links</b>
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="links">
-                            <a class="dropdown-item" href="./why_iitmandi.html">Why study at IIT Mandi</a>
-                            <a class="dropdown-item" href="./scholarships.html">Scholarships</a>
-                            <a class="dropdown-item" href="./internships.html">Internships</a>
-                            <a class="dropdown-item dropright" href="#" id="ordinance" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ordinances</a>
-                            <ul class="dropdown-menu" aria-labelledby="ordinance">
-                              <li>
-                                <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.Tech./M.Sc. Ordinances &amp; Regulations</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a>
-                              </li>
-                            </ul>
-                            <!-- <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
-                            <a class="dropdown-item" href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.Tech./M.Sc. Ordinances &amp; Regulations</a>
-                            <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a> -->
-                            <a class="dropdown-item" href="./branch_change.html">Branch Change</a>
-                            <a class="dropdown-item" href="./online_resources.html">Online Resources</a>
-                            <a class="dropdown-item" href="./registration.html">Registration</a>
-                            <a class="dropdown-item" href="./seminar.html">Seminars and Colloquium</a>
-                            <a class="dropdown-item" href="./convocation.html">Convocation</a>
-                            <a class="dropdown-item" href="http://alumni.iitmandi.ac.in/degrees/">Degrees Awarded</a>
-                          </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
           <div class="container">
             <div class="row">
               <div id="directory" class="container col-md-3">
@@ -176,13 +141,13 @@
                       <ul class="list-unstyled">
                         <li><a href="#btech" data-toggle="collapse" aria-expanded="false"><b>B.Tech</b></a>
                           <ul class="list" style="list-style-type:circle;" id="btech">
-                            <li><a href="./cse.html">Computer Science and Engineering <b>(C.S.E.)</b></a> </li>
-                            <li><a href="./ee.html">Electrical Engineering <b>(E.E.)</b></a> </li>
-                            <li><a href="./me.html">Mechanical Engineering <b>(M.E.)</b> </a> </li>
-                            <li><a href="./ce.html">Civil Engineering <b>(C.E)</b> </a> </li>
-                            <li><a href="./ep.html">Engineering Physics <b>(E.P)</b> </a> </li>
-                            <li><a href="./dse.html">Data Science Engineering <b>(D.S.E)</b> </a> </li>
-                            <li><a href="./be.html">Bio-Engineering <b>(B.Tech.-M.Tech. Dual Degree)</b> </a> </li>
+                            <li><a href="./cse.html">Computer Science and Engineering (C.S.E)</a> </li>
+                            <li><a href="./ee.html">Electrical Engineering (E.E)</a> </li>
+                            <li><a href="./me.html">Mechanical Engineering (M.E) </a> </li>
+                            <li><a href="./ce.html">Civil Engineering (C.E.) </a> </li>
+                            <li><a href="./ep.html">Engineering Physics (E.P.) </a> </li>
+                            <li><a href="./dse.html">Data Science Engineering (D.S.E.) </a> </li>
+                            <li><a href="./be.html">Bio-Engineering (B.Tech.-M.Tech. Dual Degree) </a> </li>
                             <li><a href="./btech.html#credits">Credits Structure</a></li>
                             <li><a href="./btech.html#minor">Minor Programme</a> </li>
                             <li><a href="./btech.html#honors">Requirements for Btech Honors</a> </li>
@@ -208,68 +173,6 @@
               <div id="content" class="container col-12 col-md-9">
                 <h1><u>Bachelor of Technology</u></h1><h3 class="text-secondary">(B.Tech.)</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis finibus tortor, in lacinia justo. Etiam ultrices efficitur dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu blandit elit. Nam et volutpat massa. Sed pellentesque facilisis nisi, eget aliquet nunc bibendum sed. In hac habitasse platea dictumst. Aliquam auctor accumsan erat nec sagittis. Fusce ornare elit ut odio pharetra dapibus. Duis at nisl ut felis imperdiet ullamcorper eget ut lectus. Nulla elementum, ligula sed dapibus lacinia, tortor diam vulputate neque, iaculis egestas mauris nisi ut ex. Etiam placerat leo nulla, eget scelerisque eros gravida eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer non magna sit amet quam aliquam tincidunt vel id augue. Integer egestas ac est ac ornare. In dapibus mauris in accumsan convallis.</p>
-                <br>
-                <h2>Curriculum</h2>
-                <br>
-                <ul class="list-unstyled">
-                  <li><h3>B.Tech. Programmes</h3>
-                        <div class="row">
-                          <div class="card" style="width: 18rem;">
-                            <a href="./cse.html"><img class="card-img-top" src="./images/cse.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Computer Science and Engineering</h5></a>
-                            </div>
-                          </div>
-                          <div class="card" style="width: 18rem;">
-                            <a href="./ee.html"><img class="card-img-top" src="./images/ee.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Electrical Engineering</h5></a>
-                            </div>
-                          </div>
-                          <div class="card" style="width: 18rem;">
-                            <a href="./me.html"><img class="card-img-top" src="./images/me.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Mechanical Engineering</h5></a>
-                            </div>
-                          </div>
-                          <div class="card" style="width: 18rem;">
-                            <a href="./ce.html"><img class="card-img-top" src="./images/ce.png" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Civil Engineering</h5></a>
-                            </div>
-                          </div>
-                          <div class="card" style="width: 18rem;">
-                            <a href="./ep.html"><img class="card-img-top" src="./images/ep.png" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Engineering Physics</h5></a>
-                            </div>
-                          </div>
-                          <div class="card" style="width: 18rem;">
-                            <a href="./dse.html"><img class="card-img-top" src="./images/dse.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Data Science Engineering</h5></a>
-                            </div>
-                          </div>
-                        </div>
-
-                      <!-- <li><a href="./cse.html">Computer Science and Engineering</a></li>
-                      <li><a href="./ee.html">Electrical Engineering</a></li>
-                      <li><a href="./me.html">Mechanical Engineering</a></li>
-                      <li><a href="./ce.html">Civil Engineering</a></li>
-                      <li><a href="./ep.html">Engineering Physics</a></li>
-                      <li><a href="./dse.html">Data Science Engineering</a></li> -->
-
-                  </li>
-                  <br><br>
-                  <li><h3>B.Tech.-M.Tech/ Dual Degree</h3>
-                    <div class="card" style="width: 18rem;">
-                      <a href="./be.html"><img class="card-img-top" src="./images/be.jpg" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Bio-Engineering</h5></a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
                 <br><br>
                 <h2>Goals of IIT Mandi’s B. Tech. Programme</h2>
                 <p align="justify">
@@ -375,6 +278,7 @@
                   </tr>
 
                 </table>
+                <p><b>Note:</b> B.Tech. batch 2018 and 2019 have an additional 3 credits in Discipline Core courses as compared to the previous batches.</p>
                 <br><br>
                 <h5><b>For B.Tech. 2016, 2017</b></h5>
                 <table class="table table-striped">
@@ -420,6 +324,7 @@
 
                 <ul class="list-unstyled">
                   <h4>Institute Common Courses</h4>
+                  <br>
                     <ul class="list-unstyled">
                       <li>
                         <h5><b>For B.Tech. 2018, 2019</b></h5>
@@ -430,9 +335,78 @@
                         <tr><td>Internship:</td><td>2 Credits</td></tr>
                         </table>
                         TOTAL CREDITS FOR COMMON CORE COURSES: 	<b>54</b>
-                        <br><br>
+                        <br><br><br>
                         <h5><b>IC Baskets</b> </h5>
-                        <table class="table table-striped">
+                        <br>
+                        <h6><u>SCIENCE I</u></h6>
+                        <div class="dynamicTableContainer" >
+                            <div class="selectBoxContainer d-none" defaultOptions='["basket_science_1"]'>
+
+                                <div>
+                                    <select class="selectBox" multiple="multiple">
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="searchButton">Search</button>
+                                    <button type="button" class="resetButton">Reset</button>
+                                </div>
+
+                            </div>
+
+                            <!-- Table -->
+                            <div class="dynamicTable">
+                                <!-- Dynamic -->
+                            </div>
+                        </div>
+                        <br>
+                        <h6><u>SCIENCE II</u></h6>
+                        <div class="dynamicTableContainer" >
+                            <div class="selectBoxContainer d-none" defaultOptions='["basket_science_2"]'>
+
+                                <div>
+                                    <select class="selectBox" multiple="multiple">
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="searchButton">Search</button>
+                                    <button type="button" class="resetButton">Reset</button>
+                                </div>
+
+                            </div>
+
+                            <!-- Table -->
+                            <div class="dynamicTable">
+                                <!-- Dynamic -->
+                            </div>
+                        </div>
+                        <br>
+                        <h6><u>ENGINEERING</u> </h6>
+                        <div class="dynamicTableContainer" >
+                            <div class="selectBoxContainer d-none" defaultOptions='["basket_engineering"]'>
+
+                                <div>
+                                    <select class="selectBox" multiple="multiple">
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="searchButton">Search</button>
+                                    <button type="button" class="resetButton">Reset</button>
+                                </div>
+
+                            </div>
+
+                            <!-- Table -->
+                            <div class="dynamicTable">
+                                <!-- Dynamic -->
+                            </div>
+                        </div>
+
+
+
+                        <!-- <table class="table table-striped">
                           <thead>
                             <tr>
                               <th>Baskets</th>
@@ -451,8 +425,8 @@
                             <td>Engineering</td>
                             <td>3 from 9</td>
                           </tr>
-                        </table>
-                        <p>A student is required to do at least one course from each of the baskets mentioned in the table above.
+                        </table> -->
+                        <p>A student is required to do at least one course from each of the baskets mentioned in the tables above.
                         Please refer to <a href="https://insite.iitmandi.ac.in/circulars/show.php?ID=No.IITMandi/AR(Acad)/2019/6783-93">this</a> for a detailed breakdown.</p>
                       </li>
                       <br>
@@ -468,6 +442,133 @@
                         TOTAL CREDITS FOR COMMON CORE COURSES: 	<b>88  (105 including Electives)</b>
                       </li>
                     </ul>
+                    <br><br>
+                    <h6><b>IC COURSES</b></h6>
+                    <div class="dynamicTableContainer" >
+                        <div class="selectBoxContainer d-none" defaultOptions='["IC"]'>
+
+                            <div>
+                                <select class="selectBox" multiple="multiple">
+                                </select>
+                            </div>
+
+                            <div>
+                                <button type="button" class="searchButton">Search</button>
+                                <button type="button" class="resetButton">Reset</button>
+                            </div>
+
+                        </div>
+
+                        <!-- Table -->
+                        <div class="dynamicTable">
+                            <!-- Dynamic -->
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <h4>Discipline Courses</h4>
+                    <p>Lorem Ipsum</p>
+                    <br>
+                    <div class="dynamicTableContainer" >
+                        <div class="selectBoxContainer d-none" defaultOptions='["discipline"]'>
+
+                            <div>
+                                <select class="selectBox" multiple="multiple">
+                                </select>
+                            </div>
+
+                            <div>
+                                <button type="button" class="searchButton">Search</button>
+                                <button type="button" class="resetButton">Reset</button>
+                            </div>
+
+                        </div>
+
+                        <!-- Table -->
+                        <div class="dynamicTable">
+                            <!-- Dynamic -->
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <h4>Elective Courses</h4>
+                    <p>Lorem Ipsum</p>
+                    <br>
+                    <div class="dynamicTableContainer" >
+                        <div class="selectBoxContainer d-none" defaultOptions='["elective"]'>
+
+                            <div>
+                                <select class="selectBox" multiple="multiple">
+                                </select>
+                            </div>
+
+                            <div>
+                                <button type="button" class="searchButton">Search</button>
+                                <button type="button" class="resetButton">Reset</button>
+                            </div>
+
+                        </div>
+
+                        <!-- Table -->
+                        <div class="dynamicTable">
+                            <!-- Dynamic -->
+                        </div>
+                    </div>
+                    <br><br>
+                    <h5><u>MTP and ISTP</u></h5>
+                    <p>MTP and ISTP are elective courses.</p>
+                    <br>
+                    <h6><b>For B.Tech 2018 onwards</b> </h6>
+                    <p>46 credits are required for Electives. The distribution of this amongst Discipline Electives
+                    and Free Electives whether a student opts for MTP or ISTP, both or none is as follows.</p>
+                    <table class="table table-responsive table-striped">
+                      <thead>
+                        <th></th>
+                        <th>ISTP+MTP</th>
+                        <th>Only ISTP</th>
+                        <th>Only MTP</th>
+                        <th>Neither</th>
+                      </thead>
+                      <tr>
+                        <th>Discipline Electives</th>
+                        <td>12</td>
+                        <td>18</td>
+                        <td>15</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <th>Free Electives</th>
+                        <td>22</td>
+                        <td>24</td>
+                        <td>23</td>
+                        <td>25</td>
+                      </tr>
+                    </table>
+                    <br>
+                    <h6><b>For B.Tech 2016 and 2017</b></h6>
+                    <p>37 credits are required for Electives. The distribution of this amongst Discipline Electives
+                    and Free Electives whether a student opts for MTP or ISTP, both or none is as follows.</p>
+                    <table class="table table-responsive table-striped">
+                      <thead>
+                        <th></th>
+                        <th>ISTP+MTP</th>
+                        <th>Only ISTP</th>
+                        <th>Only MTP</th>
+                        <th>Neither</th>
+                      </thead>
+                      <tr>
+                        <th>Discipline Electives</th>
+                        <td>12</td>
+                        <td>18</td>
+                        <td>15</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <th>Free Electives</th>
+                        <td>13</td>
+                        <td>15</td>
+                        <td>14</td>
+                        <td>21</td>
+                      </tr>
+                    </table>
 
                 <br><br>
                 <h3>Ingredients</h3>
@@ -496,7 +597,67 @@
 
 
                 </ul>
-                <br>
+                <br><br><br>
+                <ul class="list-unstyled">
+                  <li><h2>B.Tech. Programmes</h2>
+                        <div class="row">
+                          <div class="card" style="width: 18rem;">
+                            <a href="./cse.html"><img class="card-img-top" src="./images/cse.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Computer Science and Engineering</h5></a>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem;">
+                            <a href="./ee.html"><img class="card-img-top" src="./images/ee.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Electrical Engineering</h5></a>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem;">
+                            <a href="./me.html"><img class="card-img-top" src="./images/me.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Mechanical Engineering</h5></a>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem;">
+                            <a href="./ce.html"><img class="card-img-top" src="./images/ce.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Civil Engineering</h5></a>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem;">
+                            <a href="./ep.html"><img class="card-img-top" src="./images/ep.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Engineering Physics</h5></a>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem;">
+                            <a href="./dse.html"><img class="card-img-top" src="./images/dse.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Data Science Engineering</h5></a>
+                            </div>
+                          </div>
+                        </div>
+
+                      <!-- <li><a href="./cse.html">Computer Science and Engineering</a></li>
+                      <li><a href="./ee.html">Electrical Engineering</a></li>
+                      <li><a href="./me.html">Mechanical Engineering</a></li>
+                      <li><a href="./ce.html">Civil Engineering</a></li>
+                      <li><a href="./ep.html">Engineering Physics</a></li>
+                      <li><a href="./dse.html">Data Science Engineering</a></li> -->
+
+                  </li>
+                  <br><br>
+                  <li><h2>B.Tech.-M.Tech/ Dual Degree</h2>
+                    <div class="card" style="width: 18rem;">
+                      <a href="./be.html"><img class="card-img-top" src="./images/be.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Bio-Engineering</h5></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <br><br><br>
                 <h3 id="minor">Minor Program</h3>
                 <p align="justify">A minor is intended for a student to gain expertise in an area outside his/her major B. Tech discipline. A specialist basket of 3-6 courses is identified for each Minor. Each basket may rest on one or more foundation courses. A basket may have sequences within it, i.e. advanced courses may rest on basic courses in the basket. In order to successfully complete a Minor, a student needs to take at least 9 credits with a CGPA of 7.0 out of the courses defined in that Minor basket.  The area of the Minor must be different from the Major discipline of the student; the courses that are part of the common core (including HSS), or the discipline core/electives cannot be counted towards a Minor.  A student is allowed to take any number of Minors, but a particular course cannot be counted for more than 1 Minor. The name of the Minor will appear on the Transcript and the degree certificate of the student.</p>
                 <ul style="list-style-type:none;">

@@ -9,9 +9,13 @@ var table = new Tabulator("#table", {
 		dir: "asc"
 	}, ],
 	pagination: "local",
-	paginationSize: 20,
+	paginationSize: 50,
 	resizableColumns: false,
 	columns: [ //Define Table Columns
+		{
+			title: "Sr. No.",
+			formatter:"rownum", align:"center", width:40
+		},
 		{
 			title: "Course Code",
 			field: "courseCode"
