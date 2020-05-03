@@ -35,6 +35,52 @@
 
     <div class="wrapper">
       <!-- Sidebar  -->
+      <nav id="sidebar">
+          <div id="dismiss">
+              <i class="fas fa-arrow-left"></i>
+          </div>
+
+          <div class="sidebar-header">
+              <h3><a href="index.html">Academics</a></h3>
+          </div>
+
+          <ul class="list-unstyled components">
+            <h4><p class="text-muted">Curriculum</p></h4>
+            <li>
+                <a href="#acadSide" data-toggle="collapse" aria-expanded="false"><b><h5>Academic Programmes</h5></b></a>
+                <ul class="list-unstyled" id="acadSide">
+                  <li><a href="#btechSide" data-toggle="collapse" aria-expanded="false"><b>B.Tech. </b></a><a href="btech.html"><b>(Visit)</b></a>
+                  <ul class="collapse list-unstyled" id="btechSide">
+                    <li><a href="./cse.html">Computer Science and Engineering (C.S.E)</a> </li>
+                    <li><a href="./ee.html">Electrical Engineering (E.E)</a> </li>
+                    <li><a href="./me.html">Mechanical Engineering (M.E) </a> </li>
+                    <li><a href="./be.html">Bio-Engineering (B.Tech.-M.Tech. Dual Degree) </a> </li>
+                    <li><a href="./ce.html">Civil Engineering (C.E.) </a> </li>
+                    <li><a href="./ep.html">Engineering Physics (E.P.) </a> </li>
+                    <li><a href="./dse.html">Data Science Engineering (D.S.E.) </a> </li>
+                    <li><a href="./btech.html#credits">Credits Structure</a></li>
+                    <li><a href="./btech.html#minor">Minor Programme</a> </li>
+                    <li><a href="./btech.html#honors">Requirements for Btech Honors</a> </li>
+                  </ul>
+                  </li>
+                  <li><a href="mtech.html">M.Tech.</a></li>
+                  <li><a href="ms.html">M.S.</a></li>
+                  <li><a href="phd.html">Ph.D.</a></li>
+                </ul>
+            </li>
+            <li><a href="evaluation.html">Evaluation and Grading System</a></li>
+            <li><a href="#ordinanceSide" data-toggle="collapse" aria-expanded="false">Ordinances</a>
+              <ul class="collapse list-unstyled" id="ordinanceSide">
+                <li><a href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech. Ordinances</a></li>
+                <li><a href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.tech./M.Sc. Ordinances </a></li>
+                <li><a href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S./Ph.D. Ordinances</a> </li>
+              </ul>
+            </li>
+
+          </ul>
+      </nav>
+      <!-- Page Content  -->
+      <div id="content">
       <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><b>Academics Home</b></a>
@@ -174,62 +220,70 @@
                 <h1><u>Bachelor of Technology</u></h1><h3 class="text-secondary">(B.Tech.)</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis finibus tortor, in lacinia justo. Etiam ultrices efficitur dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu blandit elit. Nam et volutpat massa. Sed pellentesque facilisis nisi, eget aliquet nunc bibendum sed. In hac habitasse platea dictumst. Aliquam auctor accumsan erat nec sagittis. Fusce ornare elit ut odio pharetra dapibus. Duis at nisl ut felis imperdiet ullamcorper eget ut lectus. Nulla elementum, ligula sed dapibus lacinia, tortor diam vulputate neque, iaculis egestas mauris nisi ut ex. Etiam placerat leo nulla, eget scelerisque eros gravida eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer non magna sit amet quam aliquam tincidunt vel id augue. Integer egestas ac est ac ornare. In dapibus mauris in accumsan convallis.</p>
                 <br><br>
-                <h2>Goals of IIT Mandi’s B. Tech. Programme</h2>
-                <p align="justify">
-                Historically, the IITs had a B.Tech. curriculum that was aimed at training experts in each specific branch for a career in research or engineering in the branch. The curriculum had a large and strong core covering all sub-areas of the branch in depth. There was also a substantial component in basic sciences and engineering fundamentals. The courses were carefully sequenced with the assumption that all students would take them in lock-step. With changes in society and the nature of technology, IIT Mandi has taken a fresh look at the B.Tech. curriculum. <br><br>
-                <h4>The Students</h4>
+                <h2 style="display: inline;">Goals of IIT Mandi’s B. Tech. Programme</h2><a style="float: right;" href="#goals" data-toggle="collapse" aria-expanded="false">(expand/contract)</a>
+                <ul class="collapse list-unstyled" style="padding-left: 0;" id="goals">
+                  <br>
+                    <li>
+                    <p align="justify">
+                    Historically, the IITs had a B.Tech. curriculum that was aimed at training experts in each specific branch for a career in research or engineering in the branch. The curriculum had a large and strong core covering all sub-areas of the branch in depth. There was also a substantial component in basic sciences and engineering fundamentals. The courses were carefully sequenced with the assumption that all students would take them in lock-step. With changes in society and the nature of technology, IIT Mandi has taken a fresh look at the B.Tech. curriculum. <br><br>
+                    <h4>The Students</h4>
 
-                The scheme of admission based on JEE ensures that students who join IIT for B.Tech. are highly intelligent and capable of hard work if sufficiently motivated. It does not ensure that they are passionate about engineering or the branch to which they have been admitted. Some do not have a strong aptitude for either. We see that IIT students after graduation go on to make their mark in a variety of ways, some far removed from their core B.Tech. branch. They may focus on technology as researchers, design engineers and professors. They may use their technical knowledge to complement other skills as technical managers, public administrators, in NGOs and policy think tanks, venture capital funds and so on. A few leave technology altogether to take up, for instance, school teaching in a village.<br><br>
+                    The scheme of admission based on JEE ensures that students who join IIT for B.Tech. are highly intelligent and capable of hard work if sufficiently motivated. It does not ensure that they are passionate about engineering or the branch to which they have been admitted. Some do not have a strong aptitude for either. We see that IIT students after graduation go on to make their mark in a variety of ways, some far removed from their core B.Tech. branch. They may focus on technology as researchers, design engineers and professors. They may use their technical knowledge to complement other skills as technical managers, public administrators, in NGOs and policy think tanks, venture capital funds and so on. A few leave technology altogether to take up, for instance, school teaching in a village.<br><br>
 
-                <h4>The Technology Milieu</h4>
+                    <h4>The Technology Milieu</h4>
 
-                Globalization and the rapid march of science and technology have brought dramatic changes in the nature of the engineering profession. Increasingly, engineers are called upon to deliver technology to a wide variety of people in diverse socio-economic strata, cultures, geographies and political systems. Engineering is increasingly inter-disciplinary in nature, encompassing not only a range of engineering disciplines, but also management, sociology, linguistics, history and other non-engineering disciplines.<br>
+                    Globalization and the rapid march of science and technology have brought dramatic changes in the nature of the engineering profession. Increasingly, engineers are called upon to deliver technology to a wide variety of people in diverse socio-economic strata, cultures, geographies and political systems. Engineering is increasingly inter-disciplinary in nature, encompassing not only a range of engineering disciplines, but also management, sociology, linguistics, history and other non-engineering disciplines.<br>
 
-                The rapid advance of science and technology implies that much of the knowledge that a student acquires during B. Tech. has a useful lifetime of only a few years. Conversely, much of the knowledge that an engineer will use during his/her career of 40-50 years will be learnt only after graduation. Only some very basic principles can be expected to remain current over the next half a century.<br><br>
+                    The rapid advance of science and technology implies that much of the knowledge that a student acquires during B. Tech. has a useful lifetime of only a few years. Conversely, much of the knowledge that an engineer will use during his/her career of 40-50 years will be learnt only after graduation. Only some very basic principles can be expected to remain current over the next half a century.<br><br>
 
-                <h4>The Desirable Outputs</h4>
+                    <h4>The Desirable Outputs</h4>
 
-                Given the above changes, it is necessary to re-orient the B.Tech. curriculum. As an Indian Institute of Technology, it is our duty to train leaders for the growth of India with a strong technology focus. The necessary and desirable characteristics of our B.Tech. graduates are:<br>
+                    Given the above changes, it is necessary to re-orient the B.Tech. curriculum. As an Indian Institute of Technology, it is our duty to train leaders for the growth of India with a strong technology focus. The necessary and desirable characteristics of our B.Tech. graduates are:<br>
 
-                <ul>
-                  <li>Self-motivated with a passion to do something useful</li>
-                  <li>The ability to learn quickly and devise innovative solutions</li>
-                  <li>The ability to work hard, in a focused and disciplined manner</li>
-                  <li>A solid foundation in basic principles and substantial practical hands-on experience</li>
-                  <li>Sufficient specific knowledge to be immediately productive</li>
-                  <li>The ability to communicate effectively and work with others</li>
-                  <li>The ability to communicate effectively and work with others.</li>
+                    <ul>
+                      <li>Self-motivated with a passion to do something useful</li>
+                      <li>The ability to learn quickly and devise innovative solutions</li>
+                      <li>The ability to work hard, in a focused and disciplined manner</li>
+                      <li>A solid foundation in basic principles and substantial practical hands-on experience</li>
+                      <li>Sufficient specific knowledge to be immediately productive</li>
+                      <li>The ability to communicate effectively and work with others</li>
+                      <li>The ability to communicate effectively and work with others.</li>
+                    </ul>
+                    With these characteristics, our graduates can be expected to make their mark, enhance IIT's reputation and recompense the nation for its investment in their education.</p>
+                    <p align="justify"><h4>Curriculum Overview</h4>
+                      To achieve the above goals, we need a curriculum that is sufficiently flexible to the needs and aspirations of diverse students. For flexibility, it needs breadth. For students who want to master a field, it needs depth. Every student requires significant training in:<br>
+                    <ul>
+                    <li>Basics of engineering</li>
+                    <li>Physical and life sciences</li>
+                    <li>Humanities, social sciences and management</li>
+                    <li>Fundamental principles of at least one engineering discipline</li>
+                    <li>Design and innovation</li>
+                    <li>Teamwork and communication</li></ul>
+                    <p align="justify">
+                    For students to explore their passion, there is a large set of electives. Over these, we superimpose formal and informal structures tailored to the typical paths that a student may take. These structures serve as guides for the students and help the outside world to evaluate each student's expertise. Given the diversity of student aspirations and the need to keep them motivated, we allow flexibility in sequencing of courses. It requires some adaptability on the part of the teachers. It also requires firmness as students realize that taking advantage of flexibility now may restrict their options in future semesters, and they clamor for timetables to be aligned to their desires.<br><br>
+                    A broad outline of the curriculum is shown in Fig. 1. Students who are admitted to IIT are assumed to satisfy the <b><i>pre-conditions:</b></i> Fluency in English, solid grounding in high school sciences and maths, broad general knowledge of the humanities, civic society, common-sense, and good social skills. Deficiencies in any of these must be addressed informally by the teachers in the curriculum or formally outside the curriculum.<br><br>
+                    The <b><i>foundations</b></i> of all B.Techs. are: Facility in design and innovation; strong understanding of common scientific and engineering principles and methods; and breadth of knowledge outside science and engineering i.e. in the humanities, social sciences and management.<br><br><br>
+                    Next is the <b><i>core</b></i> of knowledge in the student's chosen branch. This is kept to the bare minimum, with principles and techniques being learnt in theory courses, in labs or in practicums.<br><br>
+                    Finally, we have a large number of <b><i>specialist baskets.</b></i> Many of these are interdisciplinary. In each basket, the horizontal line divides the basic from the advanced courses.<br><br><br>
+                    The boundaries in the curriculum diagram have deliberately been drawn in a vague and overlapping manner. This is to emphasize the flexibility and the inherently inter-disciplinary nature of tomorrow's B.Tech. graduate.<br><br>
+                    <b>Note</b>: Fig. 1 shows the three B.Tech. disciplines that currently exist in IIT Mandi. Others can be added. The list of Specialist Baskets is only indicative, it is not intended to be exhaustive nor does it imply a commitment that they will be offered.
+                    <table class="center"><tr><td><img class="img-fluid" src="images/course.png" /></td></tr>
+                    <tr><td class="center">Fig 1. Outline of the B.Tech Curriculum</td></tr></table>
+                    </p>
+                    <p align="justify">
+                    <h4>Sciences</h4>
+                    This includes theory and experimental methods of physical and life sciences. Courses cover maths, physics, chemistry, biology, statistics and probability. Most courses are common to all students, but a few may be discipline-specific.<br><br>
+
+                    <h4>Common Engineering</h4>
+                    By including a wide range of courses, students get prepared for the inter-disciplinary world of technology. It facilitates branch change during the 1st or 2nd year. Courses cover product design and realisation, technical graphical communication, materials science and technology, mechanics of rigid bodies and continuum mechanics, thermodynamics, computers and computation, data structures, electrical circuits and devices, electronics, energy conversion, measurements and experimental methods.<br><br>
+                </li>
                 </ul>
-                With these characteristics, our graduates can be expected to make their mark, enhance IIT's reputation and recompense the nation for its investment in their education.</p>
-                <p align="justify"><h4>Curriculum Overview</h4>
-                  To achieve the above goals, we need a curriculum that is sufficiently flexible to the needs and aspirations of diverse students. For flexibility, it needs breadth. For students who want to master a field, it needs depth. Every student requires significant training in:<br>
-                <ul>
-                <li>Basics of engineering</li>
-                <li>Physical and life sciences</li>
-                <li>Humanities, social sciences and management</li>
-                <li>Fundamental principles of at least one engineering discipline</li>
-                <li>Design and innovation</li>
-                <li>Teamwork and communication</li></ul>
-                <p align="justify">
-                For students to explore their passion, there is a large set of electives. Over these, we superimpose formal and informal structures tailored to the typical paths that a student may take. These structures serve as guides for the students and help the outside world to evaluate each student's expertise. Given the diversity of student aspirations and the need to keep them motivated, we allow flexibility in sequencing of courses. It requires some adaptability on the part of the teachers. It also requires firmness as students realize that taking advantage of flexibility now may restrict their options in future semesters, and they clamor for timetables to be aligned to their desires.<br><br>
-                A broad outline of the curriculum is shown in Fig. 1. Students who are admitted to IIT are assumed to satisfy the <b><i>pre-conditions:</b></i> Fluency in English, solid grounding in high school sciences and maths, broad general knowledge of the humanities, civic society, common-sense, and good social skills. Deficiencies in any of these must be addressed informally by the teachers in the curriculum or formally outside the curriculum.<br><br>
-                The <b><i>foundations</b></i> of all B.Techs. are: Facility in design and innovation; strong understanding of common scientific and engineering principles and methods; and breadth of knowledge outside science and engineering i.e. in the humanities, social sciences and management.<br><br><br>
-                Next is the <b><i>core</b></i> of knowledge in the student's chosen branch. This is kept to the bare minimum, with principles and techniques being learnt in theory courses, in labs or in practicums.<br><br>
-                Finally, we have a large number of <b><i>specialist baskets.</b></i> Many of these are interdisciplinary. In each basket, the horizontal line divides the basic from the advanced courses.<br><br><br>
-                The boundaries in the curriculum diagram have deliberately been drawn in a vague and overlapping manner. This is to emphasize the flexibility and the inherently inter-disciplinary nature of tomorrow's B.Tech. graduate.<br><br>
-                <b>Note</b>: Fig. 1 shows the three B.Tech. disciplines that currently exist in IIT Mandi. Others can be added. The list of Specialist Baskets is only indicative, it is not intended to be exhaustive nor does it imply a commitment that they will be offered.
-                <table class="center"><tr><td><img class="img-fluid" src="images/course.png" /></td></tr>
-                <tr><td class="center">Fig 1. Outline of the B.Tech Curriculum</td></tr></table>
-                </p>
-                <p align="justify">
-                <h4>Sciences</h4>
-                This includes theory and experimental methods of physical and life sciences. Courses cover maths, physics, chemistry, biology, statistics and probability. Most courses are common to all students, but a few may be discipline-specific.<br><br>
-
-                <h4>Common Engineering</h4>
-                By including a wide range of courses, students get prepared for the inter-disciplinary world of technology. It facilitates branch change during the 1st or 2nd year. Courses cover product design and realisation, technical graphical communication, materials science and technology, mechanics of rigid bodies and continuum mechanics, thermodynamics, computers and computation, data structures, electrical circuits and devices, electronics, energy conversion, measurements and experimental methods.<br><br>
                 <br>
-                <h3 id="credits">Distribution of Credits</h3>
                 <br>
+                <h2 style="display: inline;" id="credits">Distribution of Credits</h2><a style="float: right;" href="#cred" data-toggle="collapse" aria-expanded="false">(expand/contract)</a>
+                <ul class="collapse list-unstyled" style="padding-left: 0;" id="cred">
+                  <br>
+                    <li>
                 The distribution of credits for each of the major components:
                 <br><br>
                 <h5><b>For B.Tech. 2018, 2019</b></h5>
@@ -464,6 +518,7 @@
                             <!-- Dynamic -->
                         </div>
                     </div>
+                  </ul>
                     <br><br><br>
                     <h4>Discipline Courses</h4>
                     <p>Lorem Ipsum</p>
@@ -519,7 +574,7 @@
                     <h6><b>For B.Tech 2018 onwards</b> </h6>
                     <p>46 credits are required for Electives. The distribution of this amongst Discipline Electives
                     and Free Electives whether a student opts for MTP or ISTP, both or none is as follows.</p>
-                    <table class="table table-responsive table-striped">
+                    <table class="table table-striped">
                       <thead>
                         <th></th>
                         <th>ISTP+MTP</th>
@@ -546,7 +601,7 @@
                     <h6><b>For B.Tech 2016 and 2017</b></h6>
                     <p>37 credits are required for Electives. The distribution of this amongst Discipline Electives
                     and Free Electives whether a student opts for MTP or ISTP, both or none is as follows.</p>
-                    <table class="table table-responsive table-striped">
+                    <table class="table table-striped">
                       <thead>
                         <th></th>
                         <th>ISTP+MTP</th>
@@ -597,9 +652,13 @@
 
 
                 </ul>
-                <br><br><br>
-                <ul class="list-unstyled">
-                  <li><h2>B.Tech. Programmes</h2>
+              </li></ul>
+                <br><br>
+                <h2 style="display: inline;">Programmes</h2><a style="float: right;" href="#prog" data-toggle="collapse" aria-expanded="false">(expand/contract)</a>
+                <ul class="collapse list-unstyled" style="padding-left: 0;" id="prog">
+                  <br>
+                  <li><h3>B.Tech. Programmes</h3>
+                    <br>
                         <div class="row">
                           <div class="card" style="width: 18rem;">
                             <a href="./cse.html"><img class="card-img-top" src="./images/cse.jpg" alt="Card image cap">
@@ -648,7 +707,7 @@
 
                   </li>
                   <br><br>
-                  <li><h2>B.Tech.-M.Tech/ Dual Degree</h2>
+                  <li><h3>B.Tech.-M.Tech/ Dual Degree</h3>
                     <div class="card" style="width: 18rem;">
                       <a href="./be.html"><img class="card-img-top" src="./images/be.jpg" alt="Card image cap">
                       <div class="card-body">
@@ -657,8 +716,10 @@
                     </div>
                   </li>
                 </ul>
-                <br><br><br>
-                <h3 id="minor">Minor Program</h3>
+                <br><br>
+                <h2 style="display: inline;" id="minor">Minor Program</h2><a style="float: right;" href="#min" data-toggle="collapse" aria-expanded="false">(expand/contract)</a>
+                <ul class="collapse list-unstyled" style="padding-left: 0;" id="min">
+                  <li>
                 <p align="justify">A minor is intended for a student to gain expertise in an area outside his/her major B. Tech discipline. A specialist basket of 3-6 courses is identified for each Minor. Each basket may rest on one or more foundation courses. A basket may have sequences within it, i.e. advanced courses may rest on basic courses in the basket. In order to successfully complete a Minor, a student needs to take at least 9 credits with a CGPA of 7.0 out of the courses defined in that Minor basket.  The area of the Minor must be different from the Major discipline of the student; the courses that are part of the common core (including HSS), or the discipline core/electives cannot be counted towards a Minor.  A student is allowed to take any number of Minors, but a particular course cannot be counted for more than 1 Minor. The name of the Minor will appear on the Transcript and the degree certificate of the student.</p>
                 <ul style="list-style-type:none;">
                   <li><h5><a href="#"><b>Applied Physics</b></a><h5>
@@ -813,8 +874,12 @@
                   <br>
 
                 </ul>
-                <br>
-                <h3 id="honors">B.Tech Honors</h3>
+                </li>
+              </ul>
+                <br><br>
+                <h2 style="display: inline;" id="honors">B.Tech Honors</h2><a style="float: right;" href="#honor" data-toggle="collapse" aria-expanded="false">(expand/contract)</a>
+                <ul class="collapse list-unstyled" style="padding-left: 0;" id="honor">
+                  <li>
                 <br>
                 <ol class="list">
                   <li>A student may opt for B.Tech. (Honors) degree if she/he has CGPA of 8.5 or
@@ -829,8 +894,10 @@
                   <li>Student should secure an overall CGPA of 8.5 or more out of 172 credits(160+12).</li>
                 </ol>
                 <p><b>Note:</b> Student should take permission of registration for the B.Tech.(Honors) Degree from Associate Dean (Courses).</p>
+              </li>
+            </ul>
                 <br><br>
-                <h3>B.Tech. Ordinances</h3>
+                <h2>B.Tech. Ordinances</h2>
                   <p><a href="files/B.Tech%20Ordinance%20and%20Regulations.pdf">Click here</a></p>
               </div>
             </div>
