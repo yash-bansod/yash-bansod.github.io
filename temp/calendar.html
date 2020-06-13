@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles/bootstrap.css" >
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tabulator.min.css">
+  	<link href="./styles/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     <!-- Font Awesome JS -->
@@ -119,17 +121,17 @@
                             <a class="nav-link text-light" href="https://students.iitmandi.ac.in/international.php"><b>International</b></a>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link text-light" href="#" id="academicBodies" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="nav-link text-light" href="./academic_bodies.html" id="academicBodies" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <b>Academic Bodies</b>
                           </a>
                           <div class="dropdown-menu" aria-labelledby="academicBodies">
-                            <a class="dropdown-item" href="./senate.html">Senate</a>
-                            <a class="dropdown-item" href="./boa.html">Board of Academics</a>
-                            <a class="dropdown-item" href="./cig.html">Course Interest Group</a>
-                            <a class="dropdown-item" href="./cpc.html">Course Proposal Committee</a>
-                            <a class="dropdown-item" href="./course_coordinator.html">Course Co-ordinators</a>
-                            <a class="dropdown-item" href="./fa.html">Faculty Advisors</a>
-                            <a class="dropdown-item" href="./lac.html">Library Advisory Council</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#senate">Senate</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#BOA">Board of Academics</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#CIG">Course Interest Group</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#CPC">Course Proposal Committee</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#CC">Course Co-ordinators</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#FA">Faculty Advisors</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#LAC">Library Advisory Council</a>
                           </div>
                         </li>
                         <li class="nav-item">
@@ -143,7 +145,7 @@
                             <a class="dropdown-item" href="./why_iitmandi.html">Why study at IIT Mandi</a>
                             <a class="dropdown-item" href="./scholarship.html">Scholarships</a>
                             <a class="dropdown-item" href="./internship.html">Internships</a>
-                            <a class="dropdown-item dropright" href="#" id="ordinance" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ordinances</a>
+                            <!-- <a class="dropdown-item dropright" href="#" id="ordinance" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ordinances</a>
                             <ul class="dropdown-menu" aria-labelledby="ordinance">
                               <li>
                                 <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
@@ -154,10 +156,10 @@
                               <li>
                                 <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a>
                               </li>
-                            </ul>
-                            <!-- <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
+                            </ul> -->
+                            <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
                             <a class="dropdown-item" href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.Tech./M.Sc. Ordinances &amp; Regulations</a>
-                            <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a> -->
+                            <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a>
                             <a class="dropdown-item" href="./branch_change.html">Branch Change</a>
                             <a class="dropdown-item" href="./online_resources.html">Online Resources</a>
                             <a class="dropdown-item" href="./registration.html">Registration</a>
@@ -186,35 +188,27 @@
                   <li>6. Academic calendar for the even semester (Aug-Dec) 2016 of academic year 2016-17 <a href="files/Calendar_AY_2016-17_Aug-Dec_2016_Final.pdf"> (<b>Click Here</b>)</a>.</li>
                   <li>7. Academic calendar for the even semester (Feb-June) 2016 of academic year 2015-16 <a href="files/Calendar_AY_2015-16_Feb-June_2016_Final.pdf"> (<b>Click Here</b>)</a>.</li>
       				</ul> -->
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>Academic Year</th>
-                    <th>Calendar</th>
-                  </tr>
-                </thead>
-                <tr>
-                  <td>2019</td>
-                  <td><a href="files/Academic_Calender_2019.pdf" target="_blank">Odd and Even Sem.</a>
-                  <br><a href="files/Academic_Calender_2019_1st-Year.pdf" target="_blank">B.tech. 1st Year, Odd Sem.</a> </td>
-                </tr>
-                <tr>
-                  <td>2018</td>
-                  <td><a href="files/Calendar_2018.pdf" target="_blank">Odd and Even Sem.</a>
-                  <br><a href="files/btech_1styear_2018batch.pdf" target="_blank">B.tech. 1st Year, Odd Sem.</a> </td>
-                </tr>
-                <tr>
-                  <td>2017</td>
-                  <td><a href="files/acad_calendar2016-17.pdf" target="_blank">Even Sem. (Feb-June)</a>
-                  <br><a href="files/Calender_Odd_2017.pdf" target="_blank">Odd Sem. (Aug-Dec)</a>
-                  <br><a href="files/calendar_2017_btech_1stsem.pdf" target="_blank">B.tech. 1st Year, Odd Sem.</a>
-                </tr>
-                <tr>
-                  <td>2016</td>
-                  <td><a href="files/Calendar_AY_2015-16_Feb-June_2016_Final.pdf" target="_blank">Even Sem. (Feb-June)</a>
-                  <br><a href="files/Calendar_AY_2016-17_Aug-Dec_2016_Final.pdf" target="_blank">Odd Sem. (Aug-Dec)</a>
-                </tr>
-              </table>
+              <br>
+              <div class="dynamicTableContainer" >
+                  <div class="selectBoxContainer d-none" defaultOptions='["calendar"]'>
+
+                      <div>
+                          <select class="selectBox" multiple="multiple">
+                          </select>
+                      </div>
+
+                      <div>
+                          <button type="button" class="searchButton">Search</button>
+                          <button type="button" class="resetButton">Reset</button>
+                      </div>
+
+                  </div>
+
+                  <!-- Table -->
+                  <div class="dynamicTable">
+                      <!-- Dynamic -->
+                  </div>
+              </div>
               </div>
             </div>
           </div>
@@ -260,6 +254,9 @@
     <script src="scripts/jquery-3.4.1.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="scripts/bootstrap.min.js" ></script>
+    <script src="./scripts/select2.min.js"></script>
+    <script src="./scripts/tabulator.min.js"></script>
+    <script type="text/javascript" src="scripts/archiveTable-m.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>

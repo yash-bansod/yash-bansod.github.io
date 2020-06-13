@@ -4,8 +4,8 @@ var allTags, allCourses;
 
 $(document).ready(async function () {
 
-    allTags = await (await fetch(baseURL + "/fetch/allTagObjects")).json();
-    allCourses = await (await fetch(baseURL + "/fetch/allCourseObjects")).json();
+  allTags = ["calendar","courselist", "timetable", "fee", "other"]
+  allCourses = await (await fetch(baseURL + "/fetch/allArchives")).json();
 
     $('.dynamicTableContainer').each(function (index, element) {
 
@@ -15,7 +15,7 @@ $(document).ready(async function () {
         // parse default options
         let defaultOptions = currentPP.find('div.selectBoxContainer').attr('defaultOptions')
         defaultOptions = defaultOptions ? JSON.parse(defaultOptions) : []; // if default options not provided
-        defaultOptions = allTags.filter(tag => defaultOptions.indexOf(tag.name) !== -1).map(tagObj => tagObj.name) // filter out invalid default options
+        defaultOptions = allTags.filter(tag => defaultOptions.indexOf(tag) !== -1).map(tagObj => tagObj) // filter out invalid default options
 
 
         const resetButton = currentPP.find('button.resetButton')
@@ -33,49 +33,40 @@ $(document).ready(async function () {
             layout: "fitColumns", //fit columns to width of table (optional)
             responsiveLayout:"hide",
             initialSort: [{
-                column: "courseCode",
+                column: "title",
                 dir: "asc"
             }, ],
             pagination: "local",
             paginationSize: 10,
             resizableColumns: false,
             columns: [ //Define Table Columns
-                {
-                    title: "Course Code",
-                    field: "courseCode"
-                },
-                {
-                    title: "Course Name",
-                    field: "courseName",
-                    formatter: "textarea"
-                },
-                {
-                    title: "LTPC",
-                    field: "ltpc"
-                },
-                {
-                    title: "File",
-                    field: "filename",
-                    formatter: function (cell, formatterParams, onRendered) {
-                        const filename = cell.getValue();
+              {
+                title: "Item",
+                field: "title",
+                formatter: "textarea"
+              },
+              {
+                title: "File",
+                field: "filename",
+                formatter: function(cell, formatterParams, onRendered){
+                  const filename  = cell.getValue();
 
-                        // if file not present
-                        if (filename === '#') return "No file present"
-                        else return `<a href="${"http://iitmandi.co.in:6996/static/pdf/"+filename}" target="_blank" >PDF File</a>`;
-                    }
-                },
+                  // if file not present
+                  if(filename === '#') return "No file present"
+                  else return `<a href="${"http://iitmandi.co.in:6996/static/pdf/"+filename}" target="_blank" >PDF File</a>`;
+                }
+              },
             ],
         });
 
         // construct multi select box
         tagOptions = allTags.map(tag => {
             option = {
-                id: tag.name,
-                text: tag.name.replace(/_/g, " ")
+                id: tag,
+                text: tag
             };
             return option;
         });
-        console.log(defaultOptions)
         selectBox.select2({
             placeholder: 'Select Tags',
             width: 'resolve',
@@ -107,21 +98,12 @@ $(document).ready(async function () {
 })
 
 function selectedCourseList(tagList) {
+	let selectedCourses = [];
+  allCourses.forEach((course)=>{
+    if(course.category.indexOf(tagList) >=0){
+      selectedCourses.push(course);
+    }
+  });
 
-    // if tagList is empty
-    if (tagList.length === 0) return allCourses;
-
-    var tagListObjs = allTags.filter(tag => tagList.indexOf(tag.name) !== -1);
-
-    // if all tags are invalid
-    if (tagListObjs.length === 0) return [];
-
-    let selectedCourses = tagListObjs[0].courseList;
-
-    tagListObjs.forEach((tag) => {
-        const b = tag.courseList;
-        selectedCourses = selectedCourses.filter(x => b.includes(x));
-    });
-
-    return allCourses.filter(course => selectedCourses.indexOf(course.courseCode) !== -1)
+	return selectedCourses;
 }

@@ -45,9 +45,6 @@ var table = new Tabulator("#table", {
 
 $(document).ready(async function () {
 	//initailize it, so that the page isn't deformed while course data is fetched
-	$('#tagList').select2({
-		placeholder: 'Select Tags'
-	});
 
 	allTags = await (await fetch(baseURL + "/fetch/allTagObjects")).json();
 	allCourses = await (await fetch(baseURL + "/fetch/allCourseObjects")).json();
@@ -61,23 +58,36 @@ $(document).ready(async function () {
 		return option;
 	});
 	$('#tagList').select2({
-		placeholder: 'Select Tags',
+		placeholder: 'Search by Text or Select Tags',
 		width: 'resolve',
-		data: tagOptions
+		data: tagOptions,
+		tags: true,
 	});
-
+	tagOptionsText = tagOptions.map(function(value) {
+  return value.text;
+	});
 	// set up the buttons
 	$('.searchBtn').click(function () {
-		if ($('#tagList').val().length === 0) {
-			table.setData(allCourses);
-		} else {
-			table.setData(selectedCourseList($('#tagList').val()));
+		if(!tagOptions.includes($('#tagList').val()[0]))	{
+			table.setFilter([
+				[{field:"courseName",type:"like",value:$('#tagList').val()[0]},
+				{field:"courseCode",type:"like",value:$('#tagList').val()[0]}]
+			]);
 		}
+		else {
+			if ($('#tagList').val().length === 0) {
+				table.setData(allCourses);
+			} else {
+				table.setData(selectedCourseList($('#tagList').val()));
+			}
+		}
+
 	});
 	$('.resetBtn').click(function () {
 		// clear the select box
 		$('#tagList').val(null).trigger('change');
 		// populate table
+		table.clearFilter();
 		table.setData(allCourses);
 	});
 

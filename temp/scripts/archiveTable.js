@@ -17,7 +17,7 @@ var table = new Tabulator("#table", {
 			formatter:"rownum", align:"center", width:40
 		},
 		{
-			title: "Course Name",
+			title: "Item",
 			field: "title",
 			formatter: "textarea"
 		},
@@ -41,7 +41,7 @@ $(document).ready(async function () {
 		placeholder: 'Select Tags'
 	});
 
-	allTags = ["calendar","courselist", "timetable", "other"]
+	allTags = ["calendar","courselist", "timetable", "fee", "other"]
 	allCourses = await (await fetch(baseURL + "/fetch/allArchives")).json();
 
 	// construct multi select box

@@ -75,14 +75,14 @@
       <div id="content">
 
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
+            <div class="container-fluid w-100">
               <a class="navbar-brand" href="index.html"><b>Academics Home</b></a>
                 <button class="btn btn-light d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-align-justify"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav mr-auto">
+                    <ul class="nav navbar-nav mx-auto">
                         <li class="nav-item">
                             <a class="nav-link text-light" href="./admission.html"><b>Admissions</b></a>
                         </li>
@@ -113,13 +113,24 @@
                             <a class="nav-link text-light" href="./fees.html"><b>Fees</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="./calender.html"><b>Calendar</b></a>
+                            <a class="nav-link text-light" href="./calendar.html"><b>Calendar</b></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="https://students.iitmandi.ac.in/international.php"><b>International</b></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="./senate.html"><b>Senate</b></a>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link text-light" href="./academic_bodies.html" id="academicBodies" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>Academic Bodies</b>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="academicBodies">
+                            <a class="dropdown-item" href="./academic_bodies.html#senate">Senate</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#BOA">Board of Academics</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#CIG">Course Interest Group</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#CPC">Course Proposal Committee</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#CC">Course Co-ordinators</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#FA">Faculty Advisors</a>
+                            <a class="dropdown-item" href="./academic_bodies.html#LAC">Library Advisory Council</a>
+                          </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="./contacts.html"><b>Contact Us</b></a>
@@ -130,9 +141,9 @@
                           </a>
                           <div class="dropdown-menu" aria-labelledby="links">
                             <a class="dropdown-item" href="./why_iitmandi.html">Why study at IIT Mandi</a>
-                            <a class="dropdown-item" href="./scholarships.html">Scholarships</a>
-                            <a class="dropdown-item" href="./internships.html">Internships</a>
-                            <a class="dropdown-item dropright" href="#" id="ordinance" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ordinances</a>
+                            <a class="dropdown-item" href="./scholarship.html">Scholarships</a>
+                            <a class="dropdown-item" href="./internship.html">Internships</a>
+                            <!-- <a class="dropdown-item dropright" href="#" id="ordinance" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ordinances</a>
                             <ul class="dropdown-menu" aria-labelledby="ordinance">
                               <li>
                                 <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
@@ -143,10 +154,10 @@
                               <li>
                                 <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a>
                               </li>
-                            </ul>
-                            <!-- <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
+                            </ul> -->
+                            <a class="dropdown-item" href="./files/MS_Phd_Ordinance_and_Regulations.pdf">M.S/Ph.D. Ordinance &amp; Regulations</a>
                             <a class="dropdown-item" href="./files/Ordinances-for-M.Tech-M.Sc.pdf">M.Tech./M.Sc. Ordinances &amp; Regulations</a>
-                            <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a> -->
+                            <a class="dropdown-item" href="./files/B.Tech Ordinance and Regulations.pdf">B.Tech Ordinances &amp; Regulations</a>
                             <a class="dropdown-item" href="./branch_change.html">Branch Change</a>
                             <a class="dropdown-item" href="./online_resources.html">Online Resources</a>
                             <a class="dropdown-item" href="./registration.html">Registration</a>
@@ -161,50 +172,41 @@
         </nav>
           <div class="container">
             <div class="row">
-              <div id="content" class="container">
-                <h1><u>Calendar</u></h1>
-                <!-- Academic calendar for the even semester (Feb-June) 2019 and odd semester (Aug-Dec) 2019 <a href="files/Academic_Calender_2019.pdf"> (<b>Click Here</b>)</a>
+              <div id="TextContent" class="container">
+                <h1><u>Part-Time M.S. and Ph.D. Admissions</u></h1>
+                <br>
+                <p>IIT Mandi provides an opportunity for college/university Faculty members to earn a research degree (M.S. or Ph.D.) on part- time basis while continuing to work in their respective college/university  The list of disciplines are Computer Science Engineering, Electrical Engineering, Mechanical Engineering, Material Sciences, Physics, Chemistry, Mathematics, Life Sciences, Humanities and Social sciences.<br></br>
+
+During the initial 1-2 semesters, admitted M.S. and Ph.D. Faculty members will be expected to attend courses (15 credits for M.S. and 12 credits for Ph.D.) for 3-12 hours per week at Mandi.  For the duration of your M.S. or Ph.D. programme, you will be expected to visit Mandi regularly for interaction with your guide and other research scholars and use of research facilities.  There is a minimum residential requirement of one semester full-time at IIT Mandi at a time to be decided in discussion with your guide.  Apart from this residential period, you are free to continue your teaching and other responsibilities in your respective college/university.</p>
+                <h4>Eligibility </h4>
+                Please visit <a href="./ms_phd_admissions.php">M.S./Ph.D. Admissions</a><br>
+                Note:- <b>The candidates must have 2 yrs of teaching experience and GATE/UGC/CSIR NET is waived for those with 5 years of teaching experience.</b>
                 <br><br>
-                <h3>Old Calenders</h3>
+                <h4>Application Process</h4>
                 <ul>
-      				    <li>1. Academic calendar for the B.Tech 1st year, Odd Semester (Aug-Dec) 2018 <a href="files/btech_1styear_2018batch.pdf"> (<b>Click Here</b>)</a></li>
-      				    <li>2. Academic calendar for the even semester (Feb-June) 2018 and odd semester (Aug-Dec) 2018 <a href="files/Calendar_2018.pdf"> (<b>Click Here</b>)</a></li>
-        					<li>3. Academic calendar for the odd semester (Aug-Dec) 2017 of academic year 2017-18 <a href="files/Calender_Odd_2017.pdf"> (<b>Click Here</b>)</a>.</li>
-      	          <li>4. Academic calendar for Btech 1st Year 2017 batch for the odd semester (Aug-Dec) 2017 for  academic year 2017-18 <a href="files/calendar_2017_btech_1stsem.pdf">(Click Here) </a>.</li>
-        					<li>5. Academic calendar for the even semester (Feb-June) 2017 of academic year 2016-17 <a href="files/acad_calendar2016-17.pdf"> (<b>Click Here</b>)</a>.</li>
-                  <li>6. Academic calendar for the even semester (Aug-Dec) 2016 of academic year 2016-17 <a href="files/Calendar_AY_2016-17_Aug-Dec_2016_Final.pdf"> (<b>Click Here</b>)</a>.</li>
-                  <li>7. Academic calendar for the even semester (Feb-June) 2016 of academic year 2015-16 <a href="files/Calendar_AY_2015-16_Feb-June_2016_Final.pdf"> (<b>Click Here</b>)</a>.</li>
-      				</ul> -->
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>Academic Year</th>
-                    <th>Calendar</th>
-                  </tr>
-                </thead>
-                <tr>
-                  <td>2019-2020</td>
-                  <td><a href="files/Academic_Calender_2019.pdf">Odd and Even Sem</a>
-                  <br><a href="files/Academic_Calender_2019_1st-Year.pdf">B.tech. 1st Year, Odd Sem.</a> </td>
-                </tr>
-                <tr>
-                  <td>2018-2019</td>
-                  <td><a href="files/Calendar_2018.pdf">Odd and Even Sem</a>
-                  <br><a href="files/btech_1styear_2018batch.pdf">B.tech. 1st Year, Odd Sem.</a> </td>
-                </tr>
-                <tr>
-                  <td>2017-2018</td>
-                  <td><a href="files/Calender_Odd_2017.pdf">Odd Sem.</a>
-                    <br>
-                    <a href="files/calendar_2017_btech_1stsem.pdf"></a>
-                  <br><a href="Academic_Calender_2019_1st-Year.pdf">B.tech. 1st Year, Odd Sem.</a> </td>
-                </tr>
-                <tr>
-                  <td>2016-2017</td>
-                  <td><a href="files/Academic_Calender_2019.pdf">Odd and Even Sem</a>
-                  <br><a href="Academic_Calender_2019_1st-Year.pdf">B.tech. 1st Year, Odd Sem.</a> </td>
-                </tr>
-              </table>
+                <li>Identify potential thesis guides at IIT Mandi. <b>Written consent of the prospective guide is compulsorily to be obtained before applying. No application will be entertained/processed without it.</b>. For the research interests of the faculty member, please visit <a href="../institute/faculty/faculty.php">LINK</a>.</li>
+
+                <li>Contact Faculty members in your area of interest, discuss your proposed research and write up a brief research proposal.  Research Proposal should be of 2-5 pages in length and include references to the current literature.  Preparing a good proposal will require reading of some research papers.</li>
+
+                <li>Submit your application for the Part Time Admission (Himachal and Jammu and Kashmir Faculty members only).  You must include the research proposal and a certificate of sponsorship from your parent College/University. </li>
+
+                <li> Click here to download application form in <a href="./files/IIT Mandi_Part Time_Application_ Form_v1.doc">(doc)</a>, <a href="./files/IIT Mandi_Part Time_Application_ Form_v1.pdf">(pdf)</a> format.
+                </li>
+
+                <li>Periodically, we will conduct interviews/written test.  You may be examined on your research proposal and your knowledge of the discipline.</li>
+                </ul>
+
+                <p>
+                <b>The correspondence address for applications received by post is:<br><br>
+                 The Chair Person<br> School Applied for ......<br>
+                 Academic Block<br>
+                Indian Institute of Technology Mandi,<br>
+                Mandi-175001,<br> Himachal Pradesh, India</b><br><br>
+
+                Note: <b>Please mark “Part-time M.S./Ph.D. Application” and "School Applied for (SBS....or....SCEE....or....SHSS....or....SE)" on the envelope.</b><br><br>
+
+                For any further clarifications regarding application process, the applicants are requested to contact concerned School.
+                </p>
               </div>
             </div>
           </div>
