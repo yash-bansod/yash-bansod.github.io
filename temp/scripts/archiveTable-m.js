@@ -34,7 +34,7 @@ $(document).ready(async function () {
             responsiveLayout:"hide",
             initialSort: [{
                 column: "title",
-                dir: "asc"
+                dir: "desc"
             }, ],
             pagination: "local",
             paginationSize: 10,
