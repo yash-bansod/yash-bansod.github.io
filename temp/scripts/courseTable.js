@@ -1,4 +1,4 @@
-const baseURL = "https://cors-anywhere.herokuapp.com/iitmandi.co.in:6996";
+const baseURL = "https://boiling-forest-83645.herokuapp.com/iitmandi.co.in:6996";
 var allTags, allCourses;
 
 var table = new Tabulator("#table", {
@@ -45,7 +45,6 @@ var table = new Tabulator("#table", {
 
 $(document).ready(async function () {
 	//initailize it, so that the page isn't deformed while course data is fetched
-
 	allTags = await (await fetch(baseURL + "/fetch/allTagObjects")).json();
 	allCourses = await (await fetch(baseURL + "/fetch/allCourseObjects")).json();
 
@@ -58,7 +57,7 @@ $(document).ready(async function () {
 		return option;
 	});
 	$('#tagList').select2({
-		placeholder: 'Search by Text or Select Tags',
+		placeholder: 'Search',
 		width: 'resolve',
 		data: tagOptions,
 		tags: true,
@@ -68,18 +67,19 @@ $(document).ready(async function () {
 	});
 	// set up the buttons
 	$('.searchBtn').click(function () {
-		if(!tagOptions.includes($('#tagList').val()[0]))	{
-			table.setFilter([
-				[{field:"courseName",type:"like",value:$('#tagList').val()[0]},
-				{field:"courseCode",type:"like",value:$('#tagList').val()[0]}]
-			]);
-		}
-		else {
+		console.log($('#iftag').is(':checked'))
+		if($('#iftag').is(':checked'))	{
 			if ($('#tagList').val().length === 0) {
 				table.setData(allCourses);
 			} else {
 				table.setData(selectedCourseList($('#tagList').val()));
 			}
+		}
+		else {
+			table.setFilter([
+				[{field:"courseName",type:"like",value:$('#tagList').val()[0]},
+				{field:"courseCode",type:"like",value:$('#tagList').val()[0]}]
+			]);
 		}
 
 	});

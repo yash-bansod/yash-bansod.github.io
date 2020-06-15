@@ -1,4 +1,4 @@
-const baseURL = "https://cors-anywhere.herokuapp.com/iitmandi.co.in:6996";
+const baseURL = "https://boiling-forest-83645.herokuapp.com/iitmandi.co.in:6996";
 var allTags, allCourses;
 
 
